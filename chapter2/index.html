@@ -38,17 +38,20 @@
 
 <h1><span>Chapter 2:</span> Materials</h1>
 
-<p>At the risk of teaching grandmother to suck eggs, I’d like you to think about what happens when a browser parses an <abbr>HTML</abbr> element. Take, for example, a paragraph element with some text inside it. There’s an opening <code class="markup element">P</code> tag, a closing <code class="markup element">P</code> tag, and between those tags, there’s the text.</p>
+<p>AU RISQUE TEACHING GRAND-
+mother to suck eggs, j'aimerais que vous réfléchissiez à ce qui se passe lorsqu'un navigateur analyse un élément<abbr>HTML</abbr>. Prenez, par exemple, un élément de paragraphe contenant du texte. Il y a une balise <code class="markup element">P</code> d'ouverture, une balise <code class="markup element">P</code> de fermeture, et entre ces balises, il y a le texte.
+.</p>
 
-<pre><code>&lt;p&gt;some text&lt;/p&gt;</code></pre>
+<pre><code>&lt;p&gt;du texte&lt;/p&gt;</code></pre>
 
-<p>A web browser encountering this element will display the text between the opening and closing tags. Now consider what happens when that same web browser encounters an element it doesn’t recognise.</p>
+<p>Un navigateur Web rencontrant cet élément affichera le texte entre les balises d'ouverture et de fermeture. Considérez maintenant ce qui se passe lorsque ce même navigateur Web rencontre un élément qu'il ne reconnaît pas.</p>
 
-<pre><code>&lt;marklar&gt;some more text&lt;/marklar&gt;</code></pre>
+<pre><code>&lt;marklar&gt;encore du texte&lt;/marklar&gt;</code></pre>
 
-<p>Once again, the browser displays the text between the opening and closing tags. What’s interesting here is what the browser doesn’t do. The browser does not throw an error. The browser does not stop parsing the <abbr>HTML</abbr> at this point, refusing to go any further. Instead, it simply ignores the tags and displays the content within.</p>
+<p>Une fois de plus, le navigateur affiche le texte entre les balises d'ouverture et de fermeture. Ce qui est intéressant ici, c'est ce que le navigateur ne fait pas. Le navigateur ne renvoie pas d'erreur. Le navigateur n'arrête pas d'analyser le <abbr>HTML</abbr> à ce stade, refusant d'aller plus loin. Au lieu de cela, il ignore simplement les balises et affiche le contenu à l'intérieur.
+</p>
 
-<p>This liberal attitude to errors allowed the vocabulary of <abbr>HTML</abbr> to grow over time from the original 21 elements to the 121 elements in <abbr>HTML</abbr>5. Whenever a new element is introduced to <abbr>HTML</abbr>, we know exactly how older browsers will treat it; they will ignore the tags and display the content.</p>
+<p>Cette attitude libérale vis-à-vis des erreurs a permis au vocabulaire du<abbr>HTML</abbr> de croître avec le temps, passant des 21 éléments d'origine aux 121 éléments du <abbr>HTML</abbr>5. Chaque fois qu'un nouvel élément est introduit dans <abbr>HTML</abbr>, we know exactly how older browsers will treat it; they will ignore the tags and display the content.</p>
 
 <p>That’s a remarkably powerful feature. It allows browsers to implement new <abbr>HTML</abbr> features at different rates. We don’t have to wait for every browser to recognise a new element. Instead we can start using the new element at any time, secure in the knowledge that non‐supporting browsers won’t choke on it.</p>
 
