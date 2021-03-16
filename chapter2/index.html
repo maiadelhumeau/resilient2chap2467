@@ -71,55 +71,56 @@
 <p>Ensuite, il y a des éléments qui décrivent le type de contenu qu'ils contiennent. Le contenu d'un élément <code class="markup element">P</code> doit être considéré comme un paragraphe de texte. Le contenu d'un élément  <code class="markup element">LI</code> doit être considéré comme un élément d'une liste. Les navigateurs affichent le contenu de ces éléments avec quelques indices visuels quant à leur signification. Les paragraphes sont affichés avec des espaces avant et après leur contenu. Les éléments de la liste sont affichés avec des puces ou des numéros avant leur contenu.
 </p>
 
-<p>The early growth of <abbr>HTML</abbr>’s vocabulary was filled with new elements that provided visual instructions to web browsers: <code class="markup element">BIG</code>, <code class="markup element">SMALL</code>, <code class="markup element">CENTER</code>, <code class="markup element">FONT</code>. In fact, the visual instructions were the only reason for those elements to exist—they provided no hint as to the <em>meaning</em> of the content they contained. <abbr>HTML</abbr> was in danger of becoming a visual instruction language instead of a vocabulary of meaning.</p>
+<p>Le début de la croissance du vocabulaire <abbr>HTML</abbr> a été rempli de nouveaux éléments qui ont fourni des instructions visuelles aux navigateurs Web: <code class="markup element">BIG</code>, <code class="markup element">SMALL</code>, <code class="markup element">CENTER</code>, <code class="markup element">FONT</code>. En fait, les instructions visuelles étaient la seule raison pour laquelle ces éléments existent ne fournissent aucune indication sur la  <em>signification</em> du contenu qu'elles contenaient. Le <abbr>HTML</abbr> risquait de devenir un langage d'instruction visuelle au lieu d'un vocabulaire de sens.</p>
 
 </section>
 
 <section aria-labelledby="amatterofstyle">
 
-<h2 id="amatterofstyle">A matter of style</h2>
+<h2 id="amatterofstyle">Une question de style</h2>
 
-<p><span id="Håkon%20Wium%20Lie">Håkon Wium Lie</span> was working at <abbr>CERN</abbr> at the same time as Tim Berners‐Lee. He immediately recognised the potential of the World Wide Web and its language, <abbr>HTML</abbr>. He also realised that the expressive power of the language was in danger of being swamped by visual features. Lie proposed a new format to describe the presentation of <abbr>HTML</abbr> documents: Cascading Style Sheets.</p>
+<p><span id="Håkon%20Wium%20Lie">Håkon Wium Lie</span> travaillait au <abbr>CERN</abbr> en même temps que Tim Berners-Lee. Il a immédiatement reconnu le potentiel du World Wide Web et de son langage, <abbr>HTML</abbr>. Il s'est également rendu compte que le pouvoir expressif de la langue risquait d'être submergé par des traits visuels. Lee a proposé un nouveau format pour décrire la présentation des documents <abbr>HTML</abbr> documents: les feuilles de style en cascade.</p>
 
-<p>He was quickly joined by the Dutch programmer <span id="Bert%20Bos">Bert Bos</span>. Together they set about creating a syntax that would be powerful enough to handle the demands of designers, while remaining simple enough to learn quickly. They succeeded.</p>
+<p>Il est rapidement rejoint par le programmeur néerlandais <span id="Bert%20Bos">Bert Bos</span>. Ensemble, ils se sont mis à créer une syntaxe suffisamment puissante pour gérer les demandes des concepteurs, tout en restant suffisamment simple pour apprendre rapidement. Ils ont réussi.</p>
 
-<p>Think for a moment of all the sites out there on the web. There’s a huge variation in visual style: colour schemes, typographic treatments, textures and layouts. All of that variety is made possible by one simple pattern that describes all the <abbr id="CSS">CSS</abbr> ever written:</p>
+<p>Pensez un instant à tous les sites disponibles sur le Web. Il existe une énorme variation dans le style visuel: jeux de couleurs, traitements typographiques, textures et mises en page. Toute cette variété est rendue possible par un modèle simple qui décrit tout le <abbr id="CSS">CSS</abbr>jamais écrit:</p>
 
 <pre><code>selector {
     property: value;
 }</code></pre>
 
-<p>That’s it.</p>
+<p>C'est tout.</p>
 
-<p><abbr>CSS</abbr> shares <abbr>HTML</abbr>’s forgiving attitude to errors. If a web browser encounters a selector it doesn’t understand, it simply skips over whatever is between that selector’s curly braces. If a browser sees a property or a value it doesn’t understand, it just ignores that particular declaration. The browser does not throw an error. The browser does not stop parsing the <abbr>CSS</abbr> at this point, refusing to go any further.</p>
+<p><abbr>CSS</abbr> a partagé l'attitude indulgente du <abbr>HTML</abbr> face aux erreurs. Si un navigateur Web rencontre un sélecteur qu'il ne comprend pas, il ignore simplement tout ce qui se trouve entre les accolades de ce sélecteur. Si un navigateur voit une propriété ou une valeur qu'il ne comprend pas, il ignore simplement cette déclaration particulière. Le navigateur ne renvoie pas d'erreur. Le navigateur n'arrête pas d'analyser le <abbr>CSS</abbr> à ce stade, refusant d'aller plus loin.</p>
 
 <pre><code>marklar {
     marklar: marklar;
 }</code></pre>
 
-<p>Just as with <abbr>HTML</abbr>, this loose error‐handling has allowed <abbr>CSS</abbr> to grow over time. New selectors, new properties, and new values have been added to the language’s vocabulary over the years. Whenever a new feature lands in <abbr>CSS</abbr>, designers and developers know that they can safely use it, even if it isn’t yet widely supported in browsers. They can rest assured that old browsers will react to new features with complete indifference.</p>
+<p>Tout comme avec <abbr>HTML</abbr>,  cette gestion des erreurs lâche a permis au <abbr>CSS</abbr> de se développer au fil du temps. De nouveaux sélecteurs, de nouvelles propriétés et de nouvelles valeurs ont été ajoutés au vocabulaire de la langue au fil des ans. Chaque fois qu'une nouvelle fonctionnalité arrive dans <abbr>CSS</abbr>, les concepteurs et les développeurs savent qu'ils peuvent l'utiliser en toute sécurité, même si elle n'est pas encore largement prise en charge dans les navigateurs. Ils peuvent être assurés que les anciens navigateurs réagiront aux nouvelles fonctionnalités avec une indifférence totale.</p>
 
-<p>Just because a language is elegant and well‐designed doesn’t mean that people will use it. <abbr>CSS</abbr> arrived later than <abbr>HTML</abbr>. Designers didn’t spend the intervening years waiting patiently for a way to style their documents on the web. They used what was available to them.</p>
+<p>Ce n'est pas parce qu'une langue est élégante et bien conçue que les gens l'utiliseront. Le <abbr>CSS</abbr> est arrivé plus tard que le <abbr>HTML</abbr>. Les concepteurs n'ont pas passé les années qui ont suivi à attendre patiemment un moyen de styliser leurs documents sur le Web. Ils ont utilisé ce qui était à leur disposition.
+</p>
 
 </section>
 
 <section aria-labelledby="killingit">
 
-<h2 id="killingit">Killing it</h2>
+<h2 id="killingit">Déchire tout</h2>
 
-<p>In 1996 <span id="David%20Siegel">David Siegel</span> published a book entitled <cite id="Creating%20Killer%20Websites">Creating Killer Websites</cite>. In it, he outlined a series of ingenious techniques for wrangling eye‐catching designs out of the raw material of <abbr>HTML</abbr>.</p>
+<p>En 1996 <span id="David%20Siegel">David Siegel</span> a publié un livre intitulé <cite id="Creating%20Killer%20Websites">Creating Killer Websites</cite>. A l'intérieur, il y décrit une série de techniques ingénieuses pour éliminer des conceptions accrocheuses à partir de la matière première du <abbr>HTML</abbr>.</p>
 
-<p>One technique involved using a transparent <abbr>GIF</abbr>, just one pixel by one pixel in size. If this was inserted into a page as an <code class="markup element">IMG</code> element, but given precise values in its <code class="markup attribute">WIDTH</code> and <code class="markup attribute">HEIGHT</code> attributes, designers could control the amount of whitespace in their designs.</p>
+<p>Une technique impliquait l'utilisation d'un <abbr>GIF</abbr> transparent, juste un pixel par un pixel. Si cela était inséré dans une page en tant qu'élément <code class="markup element">IMG</code> mais avec des valeurs précises dans ses attributs <code class="markup attribute">WIDTH</code> et <code class="markup attribute">HEIGHT</code>, les concepteurs pouvaient contrôler la quantité d'espaces blancs dans leurs conceptions.</p>
 
-<p>Another technique used the <code class="markup element">TABLE</code> element. This element—along with its children <code class="markup element">TR</code> and <code class="markup element">TD</code>—was intended to describe tabular data. But with the right values applied to the widths and heights of table cells, it could be used to recreate just about any desired layout.</p>
+<p>Une autre technique a utilisé l'élément <code class="markup element">TABLE</code>. Cet élément - avec ses enfants <code class="markup element">TR</code> and <code class="markup element">TD</code>— était destiné à décrire des données tabulaires. Mais avec les bonnes valeurs appliquées aux largeurs et hauteurs des cellules de tableau, il pourrait être utilisé pour recréer à peu près n'importe quelle disposition souhaitée.</p>
 
-<p>These were hacks; clever solutions to tricky problems. But they had unfortunate consequences. Designers were treating <abbr>HTML</abbr> as a tool for the appearance of content instead of a language for describing the meaning of content. <abbr>CSS</abbr> was a solution to this problem, if only designers could be convinced to use it.</p>
+<p>C'étaient des hacks; des solutions intelligentes à des problèmes délicats. Mais ils ont eu des conséquences malheureuses. Les concepteurs traitaient le <abbr>HTML</abbr> comme un outil pour l'apparence du contenu au lieu d'un langage pour décrire la signification du contenu. <abbr>CSS</abbr> était une solution à ce problème, si seulement les concepteurs pouvaient être convaincus de l'utiliser.</p>
 
 </section>
 
 <section aria-labelledby="browserwars">
 
-<h2 id="browserwars">Browser wars</h2>
+<h2 id="browserwars">GUERRES DES NAVIGATEURS</h2>
 
 <p>One of the reasons why web designers weren’t using <abbr>CSS</abbr> was the lack of browser support. Back then there were two major browsers competing for the soul of the web: Microsoft Internet Explorer and Netscape Navigator. They were incompatible by design. One browser would invent a new <abbr>HTML</abbr> element or attribute. The other browser would invent their own separate element or attribute to do exactly the same thing.</p>
 
