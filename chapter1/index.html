@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta charset="utf-8" />
+<meta name="theme-color" content="#5f7995" />
+<meta name="author" content="Jeremy Keith" />
+<meta name="description" content="Chapter One: Foundations" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@adactio" />
+<meta name="twitter:creator" content="@adactio" />
+<meta name="twitter:title" property="og:title" content="Resilient Web Design—Chapter 1" />
+<meta name="twitter:description" property="og:description" content="Chapter One: Foundations" />
+<meta name="twitter:url" property="og:url" content="https://resilientwebdesign.com/chapter1/" />
+<meta name="twitter:image" property="og:image" content="https://resilientwebdesign.com/chapter1/images/medium/sir-tim-berners-lee.jpg" />
+<title>Resilient Web Design—Chapter 1</title>
+<link rel="preload" href="../fonts/etbookot-roman-webfont.woff2" crossorigin type="font/woff2" as="font" />
+<link rel="preload" href="../js/scripts.js" as="script" />
+<link rel="stylesheet" href="../css/styles.css" />
+<link rel="contents" href="../contents/" />
+<link rel="author" href="../author/" />
+<link rel="prev" href="../introduction/" />
+<link rel="next prefetch" href="../chapter2/" />
+<link rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/" />
+<link rel="amphtml" href="amp.html" />
+<link rel="manifest" href="../manifest.json" />
+<link rel="icon shortcut" href="../images/icon512.png" sizes="512x512" type="image/png" />
+<link rel="apple-touch-icon" href="../images/icon512.png" type="image/png" />
+<link rel="icon" href="../favicon.ico" type="image/x-icon" />
+</head>
+<body>
+
+<header>
+<a href="../">Resilient Web Design</a>
+</header>
+
+<main>
+
+<h1><span>Chapter 1:</span> Foundations</h1>
+
+<p>L’histoire de la civilisation humaine est le conte d’un effort commun. Chaque génération construit par dessus le travail de leur ancêtre. Parfois ce travail fait un pas en arrière.
+Parfois il aboutit à un cul-de-sac.  Mais l’on persévère. Petit à petit, notre espèce progresse. Que le progrès soit incrémental ou un grand bond en avant, il contient toujours les accomplissements des autres avant nous.</p>
+
+<p>Nulle part ailleurs il y a cette superposition de progrès plus que dans l’histoire de la technologie. Même les bonds les plus dramatiques dans l’avancement technologique ne sont possibles que par l’existence de fondations où l’on peut construire.</p>
+
+<p>La presse de Gutenberg n’aurait pas pu être inventée sans la création de la presse a vis utilisée pour la création du vin. Les technologies ne sont pas creer isolé. Elles sont imprégnées des fantômes du passé.</p>
+
+<p>La disposition des claviers <abbr>QWERTY</abbr> pour ordinateur - et le logiciel équivalent sur votre smartphone - est un écho du design des premières générations de machines à écrire. L’arrangement des touches a été choisi pour réduire les chances de collisions des pièces mécaniques en métal lorsqu’on y fait pression dessus pour laisser leur marque sur le papier.</p>
+
+<p>Le mécanisme d’une horloge tourne dans le sens horaire seulement car c’est la direction de l’ombre sur un cadran solaire durant une journée dans l'hémisphère nord. L’histoire a évolué différemment avec les civilisations de l'hémisphère sud - in the ascendent - les aiguilles d’une montre devraient tourner dans le sens inverse. Si les horloges découpent le temps sur une période de 24 heures, elles mêmes découpées en 60 minutes chacunes, c’est grace a l’ancienne civilisation sumérienne. Ils ont eu la bonne idée d’utiliser le nombre 60 pour leur base de calcul et de commerce. C’est le plus petit nombre qui peut être divisé de façon égale par les 6 premiers chiffres. Ce système sexagésimal est encore utilisé aujourd’hui pour les heures, les minutes et les secondes qu’on utilise pour conceptualiser le temps d'une rotation de notre planète.</p>
+
+<figure>
+<picture>
+<source media="all and (min-width: 75em)" srcset="images/large/sundial.jpg" />
+<source media="all and (min-width: 50em)" srcset="images/medium/sundial.jpg, images/large/sundial.jpg 1.5x" />
+<img src="images/small/sundial.jpg" alt="A sundial on a plinth." srcset="images/medium/sundial.jpg 2x, images/large/sundial.jpg 3x" />
+</picture>
+<figcaption> L’ombre sur un cadran solaire dans l'hémisphère sud se déplace dans le sens contraire des aiguilles d’une montre.</figcaption>
+</figure>
+
+<p>Ces échos du passée résonnent dans le présent même s'ils ont perdu leur utilité. Vous pouvez encore quelques fois voir une interface utilisateur qui utilise l'icône d’un cd ou d’un vinyle pour représenter la musique. La même interface utilisera surement l'icône d’une disquette 3.5 pouces pour représenter le concept de la sauvegarde. La raison pour laquelle une disquette fait 3.5 pouces c’est qu’elle devait pouvoir rentrer dans la poche d’un t-shirt. Les icônes dans nos interfaces logicielles nous murmurent l’histoire des vêtements et de la mode.</p>
+
+<section aria-labelledby="letsharewhatweknow">
+
+<h2 id="letsharewhatweknow">Partageons ce que nous savons</h2>
+
+<p>Le progrès scientifique serait impossible sans le partage d’une histoire commune d’apprentissage. Comme l’a dit Sir <span id="Isaac%20Newton">Isaac Newton, si nous avons vu plus loin, c’est en se tenant sur les épaules des géants.</p>
+
+<p>Quand les connaissances sont passées d’une génération à la suivante, les théories deviennent plus raffinées, les unités de mesures deviennent standardisées, et les expériences augmentent la précision.</p>
+
+<p>En ce moment, les expériences les plus précises de l’humanité sont menées sous la frontière entre la Suisse et la France. C’est la maison de la <abbr id="CERN">CERN</abbr>, l’organisation européenne de la recherche nucléaire. Dans l’anneau large de 16 kilomètres du Grand Collisionneur de Hadrons, les protons sont brisés ensemble à des vitesses approchant de la vitesse de la lumière. Notre espèce de primates recréer les conditions dès le début de notre univers. La <abbr>LHC</abbr> est la pièce des machines la plus complexe qui n’a jamais été construite.</p>
+
+<p>L'ingénierie impressionnante du <abbr>LHC</abbr> est conforme avec le précédent niveau de la coopération internationale derrière la <abbr>CERN</abbr>. L'accélérateur de particules est devenu opérationnel au cours de la première décennie du XXI<sup>e</sup> siècle, mais elle travaille de base a été posée plus d’un demi-siècle auparavant. C’est alors qu’un groupe de nations s’est réuni pour créer la Convention du <abbr>CERN</abbr>, consacrant des ressources et de l’argent à la recherche scientifique pure. Le seul retour sur investissement qu’ils attendaient était dans la monnaie du savoir.</p>
+
+<p>Le travail de base a créé un environnement unique, libre des contraintes des hiérarchies nationales, économiques et sociales. Des physiciens lauréats du prix Nobel collaborent avec des étudiants dans le cadre de stage d’été. S’il y a un élément de catégorisation sociale au <abbr>CERN</abbr>, c’est seulement entre théoriciens et expérimentateurs. Les théoriciens sont ceux qui ont des tableaux noirs qui ont des ordinateurs. Ils doivent gérer beaucoup de données.Avant même la mise en marche du grand collisionneur de hadrons, la gestion des informations était un véritable défi au <abbr>CERN</abbr>. </p>
+
+<p>Entre <span id="Tim%20Berners-Lee">Tim Berners-Lee</span>, un informaticien anglais qui s’est retrouvé à travailler au CERN dans les années 1980. Au début de cette décennie, il a lancé un projet personnel pour se familiariser avec la gestion de l’information. Le logiciel résultant a été appelé <abbr>ENQUIRE</abbr>, du nom d’un manuel victorien de la vie domestique appelé <em id="Enquire%20Within%20Upon%20Everything">Enquire Within Upon Everything.</em></p> 
+
+<figure>
+<picture>
+<source media="all and (min-width: 75em)" srcset="images/large/enquire-within-upon-everything.jpg" />
+<source media="all and (min-width: 50em)" srcset="images/medium/enquire-within-upon-everything.jpg, images/large/enquire-within-upon-everything.jpg 1.5x" />
+<img src="images/small/enquire-within-upon-everything.jpg" alt="The spine of a book." srcset="images/medium/enquire-within-upon-everything.jpg 2x, images/large/enquire-within-upon-everything.jpg 3x" />
+</picture>
+<figcaption>Enquire Within Upon Everything</figcaption>
+</figure>
+
+<p>A la fin des années 80, Tim Berners-Lee était prêt à s’attaquer à l’épineux problème de la gestion de l’information à plus grande échelle. Afin d’obtenir l’adhésion au <abbr>CERN</abbr>, il a produit un document modeste intitulé <em>Information Management: A Proposal</em>. Heureusement, son superviseur, <span id="Mike%20Sendall">Mike Sendall</span>, a reconnu le potentiel de l’idée et a donné son feu vert en griffonnant les mots “vague mais passionnante" en haut du papier. Cette proposition deviendrait le <span id ="World%20Wide%20Web">World Wide Web</span>.</p>
+
+<figure>
+<picture>
+<source media="all and (min-width: 75em)" srcset="images/large/vague-but-exciting.jpg" />
+<source media="all and (min-width: 50em)" srcset="images/medium/vague-but-exciting.jpg, images/large/vague-but-exciting.jpg 1.5x" />
+<img src="images/small/vague-but-exciting.jpg" alt="A sheet of printed paper with some hand‐written words at the top." srcset="images/medium/vague-but-exciting.jpg 2x, images/large/vague-but-exciting.jpg 3x" />
+</picture>
+<figcaption>Vague mais excitant…</figcaption>
+</figure>
+
+</section>
+
+<section aria-labelledby="netvalue">
+
+<h2 id="netvalue">Valeur nette </h2>
+
+<p>Aujourd’hui nous pensons que le World Wide Web est l’une des plus grande invention de l’histoire de la communication mais pour les scientifiques du <abbr>CERN</abbr> c’est seulement un sous-produit. Quand tu travailles avec des échelles de temps cosmologiques et que tu enquêtes sur les éléments constitutifs mêmes de la réalité, le laps de temps de la relation qu'entretient l’humanité avec la technologie est minuscule.</p>
+
+<p>Quand Tim Berners-Lee a décidé de prendre en charge le problème de la gestion de l’information au <abbe>CERN</abbe>, internet était déjà établi dans une partie de l'infrastructure. Ce réseau de réseau a été créé dans les années 60 et les premiers utilisateurs étaient les universités et les institutions scientifiques.</p>
+
+<p>Ces nœuds étaient déjà physiquement reliés par les câbles téléphoniques. Plutôt que de construire un nouveau réseau entier depuis rien, ça avait du sens d’en réutiliser un qui existait déjà. Une fois encore , une nouvelle technologie a été rendue possible par l’existence d’une ancienne. Durant le 19 siècle notre monde a été terraformé technologiquement par le télégraphe. Grâce à un étonnant exploit d'ingénierie, notre monde a été enroulé de câbles sous-marins. Ces mêmes câbles ont ensuite eu pour rôle de transporter les transmissions téléphoniques. Encore après, ils ont transporté les câbles internet. Aujourd’hui ces transmissions sont des impulsions lumineuses traversant des câbles en fibre optique. Ces câbles  suivent le même chemin emprunté sur le plancher océanique que leur prédécesseur.</p>
+
+<figure>
+<picture>
+<source media="all and (min-width: 75em)" srcset="images/large/submarine-cable-map.jpg" />
+<source media="all and (min-width: 50em)" srcset="images/medium/submarine-cable-map.jpg, images/large/submarine-cable-map.jpg 1.5x" />
+<img src="images/small/submarine-cable-map.jpg" alt="A map of undersea cables." srcset="images/medium/submarine-cable-map.jpg 2x, images/large/submarine-cable-map.jpg 3x" />
+</picture>
+<figcaption>Telegeography publie une nouvelle carte des câbles sous-marins chaque année.</figcaption>
+</figure>
+
+<p>Internet n’a pas de centre. Le choix de son architecture a donné à son réseau de la robustesse. Vous avez déjà dû entendre qu'internet a été conceptualisé pour pouvoir résister à une attaque nucléaire.  Ce n’est pas totalement vrai. C’est vrai que le projet a débuté avec des considérations militaires. La recherche initiale a été fondée par le <abbr id="DARPA">DARPA</abbr>, la Defense advanced research project agency. Mais les ingénieurs travaillant sur le projet n'étaient pas du personnel militaire. Leur idéal était plus proche du Mouvement pour la liberté d'expression que celui de l’industrie militaire. Ils ont conceptualisé un réseau capable de détourner les dommages, mais les dommages qui les concernent était la censure pas un attaque nucléaire.</p>
+
+<p>L'architecture ouverte d’Internet reflète la vision libérale de ces créateurs. Tout en etant decentralisé internet a été conceptualisé volontairement pour etre un reseau idiot. C’est sa sauce secrète. Le protocole qui structure la transmission des données sur internet <abbr>-TCP/IP-</abbr> décrit comment les paquets de données devraient être déplacés, mais ce protocole ne se soucie pas du contenu de ces derniers. Cela permet à Internet d'être un mécanisme de transport de pleins de sortes d'applications : les emails, Telnet, le protocole <abbr>FTP</abbr> ou encore le World Wide Web.</p>
+
+</section>
+ VVAZF
+<section aria-labelledby="hyperspace">
+
+<h2 id="hyperspace">L’hyperespace</h2>
+
+<p>Le web utilise <abbr id="HTTP">HTTP</abbr>, le protocole de transfert HyperText, pour envoyer et recevoir des données. Ces données sont identifiées de manière unique par une <abbr>URL</abbr>. Beaucoup de ces <abbr>URL</abbr> identifient des pages en <abbr id="HTML">HTML</abbr>, le langage de balisage HyperText. La fonctionnalité qui tue le Web réside ici dans l’humble élément <code class="markup element">A</code> de <abbr>HTML</abbr>. Le A signifie Ancre. Son attribut <abbr>HREF</abbr> vous permet de passer d’une URL à une autre URL, créant un lien qui peut être parcouru d’une page à l’autre. Ces liens transforment le Web d’un simple système de stockage et de récupération en un système hypertexte.</p>
+
+<p>The web uses <abbr id="HTTP">HTTP</abbr>, the HyperText Transfer Protocol, to send and receive data. This data is uniquely identified with a <abbr>URL</abbr>. Many of these <abbr>URL</abbr>s identify pages made of <abbr id="HTML">HTML</abbr>, the HyperText Markup Language. The killer feature of the web lies here in <abbr>HTML</abbr>’s humble <code class="markup element">A</code> element. The A stands for Anchor. Its <code class="markup attribute">HREF</code> attribute allows you to cast off from within one <abbr>URL</abbr> out to another <abbr>URL</abbr>, creating a link that can be traversed from one page to the other. These links turn the web from being a straightforward storage and retrieval system into a hypertext system.</p>
+
+<p>Tim Berners‐Lee did not invent hypertext. That term was coined by <span id="Ted%20Nelson">Ted Nelson</span>, a visionary computer scientist who was working on his own hypertext system called Xanadu. Both Ted Nelson and Tim Berners‐Lee were influenced by the ideas set out by <span id="Vannevar%20Bush">Vannevar Bush</span> in his seminal 1945 essay, <cite id="As%20We%20May%20Think">As We May Think</cite>. Bush, no doubt, was in turn influenced by the ideas of Belgian informatician <span id="Paul%20Otlet">Paul Otlet</span>. Each one of these giants in the history of hypertext was standing on the shoulders of the giants that had come before them. Giants all the way down.</p>
+
+<p>Compared to previous grand visions of hypertext, links on the web are almost laughably simplistic. There is no two‐way linking. If you link to another <abbr>URL</abbr>, but the page at that <abbr>URL</abbr> is moved or destroyed, you have no way of knowing.</p>
+
+<p>But the simplicity of the web turned out to be the secret of its success.</p>
+
+<p>Tim Berners‐Lee assumed that most <abbr>URL</abbr>s would point to non‐<abbr>HTML</abbr> resources; word‐processing documents, spreadsheets, and all sorts of other computer files. <abbr>HTML</abbr> could then be used to create simple index pages that point to these files using links. Because <abbr>HTML</abbr> didn’t need to do very much, it had a limited vocabulary. That made it relatively easy to learn. To Tim Berners‐Lee’s surprise, people began to create fully‐fledged documents in <abbr>HTML</abbr>. Instead of creating content in other file formats and using <abbr>HTML</abbr> to link them up, people began writing content directly in <abbr>HTML</abbr>.</p>
+
+</section>
+
+<section aria-labelledby="markmeupmarkmedown">
+
+<h2 id="markmeupmarkmedown">Mark me up, mark me down</h2>
+
+<p><abbr>HTML</abbr> wasn’t the first markup language to be used at <abbr>CERN</abbr>. Scientists there were already sharing documents written in a flavour of <abbr id="SGML">SGML</abbr>—Standard Generalized Markup Language. Tim Berners‐Lee took this existing vocabulary from <abbr>CERN</abbr> <abbr>SGML</abbr> and used it as a starting point for his new markup language. Once again, it made sense to build on what people were already familiar with rather than creating something from scratch.</p>
+
+<p>The first version of <abbr>HTML</abbr> contained a grand total of 21 elements. Many of those elements are still with us today—<code class="markup element">TITLE</code>, <code class="markup element">P</code>, <code class="markup element">UL</code>, <code class="markup element">LI</code>, <code class="markup element">H1</code>, <code class="markup element">H2</code>, etc., and of course, the <code class="markup element">A</code> element. Others have fallen by the wayside—<code class="markup element">ISINDEX</code>, <code class="markup element">PLAINTEXT</code>, <code class="markup element">LISTING</code>, <code class="markup element">HP1</code>, <code class="markup element">HP2</code>, etc., as well as a proprietary element called <code class="markup element">NEXTID</code> that only made sense if you were using a computer running the NeXTSTEP operating system. That’s the <abbr>OS</abbr> that Tim Berners‐Lee was using when he created <abbr>HTTP</abbr>, <abbr>HTML</abbr>, and the world’s first web browser, called confusingly WorldWideWeb, which only worked on NeXT machines.</p>
+
+<p>To demonstrate the power and interoperability of the web, a cross‐platform browser was needed; one that anybody could install and use, no matter what operating system they were using. The task of building that browser fell to an undergraduate at <abbr>CERN</abbr> named <span id="Nicola%20Pellow">Nicola Pellow</span>. She created the <span id="Line%20Mode%20Browser">Line Mode Browser</span>. It was simple but powerful. It didn’t have the same level of interactivity as the WorldWideWeb browser, but the fact that it could be run on any machine meant that the web was now accessible to everyone.</p>
+
+<figure>
+<picture>
+<source media="all and (min-width: 75em)" srcset="images/large/line-mode-browser.jpg" />
+<source media="all and (min-width: 50em)" srcset="images/medium/line-mode-browser.jpg, images/large/line-mode-browser.jpg 1.5x" />
+<img src="images/small/line-mode-browser.jpg" alt="Close up of a screen of green text on a black background." srcset="images/medium/line-mode-browser.jpg 2x, images/large/line-mode-browser.jpg 3x" />
+</picture>
+<figcaption>The Line Mode Browser in action.</figcaption>
+</figure>
+
+<p>As soon as there were two web browsers in the world, interoperability and backwards compatibility became important issues. For instance, what should the Line Mode Browser do when it encounters an <abbr>HTML</abbr> element it doesn’t understand, such as <code class="markup element">NEXTID</code>?</p>
+
+<p>The answer can be found in the sparse documentation that Tim Berners‐Lee wrote for his initial collection called <cite><abbr>HTML</abbr> Tags</cite>. Under the heading “Next <abbr>ID</abbr>” he wrote:</p>
+
+<blockquote>
+<p>Browser software may ignore this tag.</p>
+</blockquote>
+
+<p>This seemingly innocuous decision would have far‐reaching consequences for the future of the World Wide Web.</p>
+
+<figure>
+<picture>
+<source media="all and (min-width: 75em)" srcset="images/large/sir-tim-berners-lee.jpg" />
+<source media="all and (min-width: 50em)" srcset="images/medium/sir-tim-berners-lee.jpg, images/large/sir-tim-berners-lee.jpg 1.5x" />
+<img src="images/small/sir-tim-berners-lee.jpg" alt="Tim Berners‐Lee, smiling." srcset="images/medium/sir-tim-berners-lee.jpg 2x, images/large/sir-tim-berners-lee.jpg 3x" />
+</picture>
+<figcaption>Sir Tim Berners‐Lee.
+<small>Photograph by Paul Clark.</small>
+<small>Licensed under a Creative Commons Attribution‐ShareAlike 4.0 International license.</small></figcaption>
+</figure>
+
+</section>
+
+<aside>
+<h2>References</h2>
+<ol>
+<li><a href="https://www.w3.org/History/1989/proposal.html"><cite>Information Management: A proposal</cite></a> by Tim Berners-Lee</li>
+<li><a href="https://www.telegeography.com/telecom-maps/index.html">Telecom Maps</a> by TeleGeography</li>
+<li><a href="https://www.theatlantic.com/magazine/archive/1945/07/as-we-may-think/303881/"><cite>As We May Think</cite></a> by Vannevar Bush</li>
+<li><a href="http://info.cern.ch/hypertext/WWW/MarkUp/Tags.html">HTML Tags</a></li>
+</ol>
+</aside>
+
+</main>
+
+<nav>
+<a href="../chapter2/" rel="next"><cite><span>Chapter 2:</span> Materials</cite></a>
+<ol start="0">
+<li><a href="../introduction/"><cite>Introduction</cite></a></li>
+<li><a href="../chapter1/"><cite><span>Chapter 1</span> Foundations</cite></a></li>
+<li><a href="../chapter2/"><cite><span>Chapter 2</span> Materials</cite></a></li>
+<li><a href="../chapter3/"><cite><span>Chapter 3</span> Visions</cite></a></li>
+<li><a href="../chapter4/"><cite><span>Chapter 4</span> Languages</cite></a></li>
+<li><a href="../chapter5/"><cite><span>Chapter 5</span> Layers</cite></a></li>
+<li><a href="../chapter6/"><cite><span>Chapter 6</span> Steps</cite></a></li>
+<li><a href="../chapter7/"><cite><span>Chapter 7</span> Challenges</cite></a></li>
+<li><a href="../author/" rel="author"><cite>About the author</cite></a></li>
+<li><a href="../index/"><cite>Index</cite></a></li>
+</ol>
+</nav>
+
+<footer>
+<p><cite>Resilient Web Design</cite> was written and produced by <a href="https://adactio.com" class="v‐card">Jeremy Keith</a>, and typeset in <a href="https://edwardtufte.github.io/et-book/"><abbr>ET</abbr> Book</a>.</p>
+<p><small>Licensed under a <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution‐ShareAlike 4.0 International License</a>.</small></p>
+</footer>
+
+<script src="../js/scripts.js" defer></script>
+</body>
+</html>

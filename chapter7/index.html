@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta charset="utf-8" />
+<meta name="theme-color" content="#5f7995" />
+<meta name="author" content="Jeremy Keith" />
+<meta name="description" content="Chapter Seven: Challenges" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@adactio" />
+<meta name="twitter:creator" content="@adactio" />
+<meta name="twitter:title" property="og:title" content="Resilient Web Design—Chapter 7" />
+<meta name="twitter:description" property="og:description" content="Chapter Seven: Challenges" />
+<meta name="twitter:url" property="og:url" content="https://resilientwebdesign.com/chapter7/" />
+<meta name="twitter:image" property="og:image" content="https://resilientwebdesign.com/chapter7/images/medium/devices.jpg" />
+<title>Resilient Web Design—Chapter 7</title>
+<link rel="preload" href="../fonts/etbookot-roman-webfont.woff2" crossorigin type="font/woff2" as="font" />
+<link rel="preload" href="../js/scripts.js" as="script" />
+<link rel="stylesheet" href="../css/styles.css" />
+<link rel="contents" href="../contents/" />
+<link rel="prev" href="../chapter6/" />
+<link rel="next prefetch author" href="../author/" />
+<link rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/" />
+<link rel="amphtml" href="amp.html" />
+<link rel="manifest" href="../manifest.json" />
+<link rel="icon shortcut" href="../images/icon512.png" sizes="512x512" type="image/png" />
+<link rel="apple-touch-icon" href="../images/icon512.png" type="image/png" />
+<link rel="icon" href="../favicon.ico" type="image/x-icon" />
+</head>
+<body>
+
+<header>
+<a href="../">Resilient Web Design</a>
+</header>
+
+<main>
+
+<h1><span>Chapitre 7:</span> Challenges</h1>
+
+<p>La quatrième conférence annuelle sur l'hypertexte a eu lieu à San Antonio, au Texas, en décembre 1991. Le projet World Wide Web de Tim Berners-Lee commençait alors à prendre forme. Pensant que les organisateurs de la conférence et les participants apprécieraient le projet, il a soumis une proposition à Hypertext 91. La proposition a été rejetée.</p>
+
+<p>La communauté HyperText ressent que le projet World Wide Web est un peu trop simpliste.
+Presque tous les systèmes hypertextes contiennent le concept de deux chemins liés.
+Si une ressource bouge, quelconque lien relié à cette ressource va s'actualiser automatiquement.
+Le web n’a fourni aucune garantie de ce type. C’est le système de liaison qui est plus facile - Vous avez juste à lier quelque chose et c’est tout. Pour les organisateurs de HyperText’91, cela semblait un peu trop naïf. Ils ne comprennent pas que la simplicité du web est actuellement sa force. C’est parce que la liaison est simple que tout le monde peut le faire. Cela s'avérerait crucial pour l'adoption et le succès du World Wide Web.</p>
+
+<p>Il est trop tentant de déclarer rapidement qu'une approche est naïve, trop simpliste et irréaliste. L'idée qu'un site Web peut simultanément offrir un accès universel à tout le monde tout en offrant une expérience immersive riche pour des appareils plus performants… qui semble aussi désespérément naïve.</p>
+
+<p>Ce jugement a été rendu à plusieurs reprises au cours de l'histoire du Web.</p>
+
+<section aria-labelledby="thisistoosimple">
+
+<h2 id="thisistoosimple">“C’est trop simple”</h2>
+
+<p>Lorsque le projet de web standard a lancé sa campagne en encourageant les designers à passer <code class="markup element">sur des tableaux</code> pour la mise en page <abbr> de CSS</abbr>, il a rencontré une résistance. A maintes reprises ils sont critiqués pour leur naïveté. “Bien sûr, une mise en page <abbr>CSS</abbr>‐peut convenir à un simple site personnel mais il est impossible qu’il s’adapte à un projet large et complexe.”</p>
+
+<p>Ensuite, Doug Bowman a dirigé la refonte de Wired.com basée sur <abbr>CSS</abbr>‐ et Mike Davidson a dirigé la refonte <abbr>d'ESPN</abbr> .com basée sur <abbr>CSS</abbr>. Après cela, les vannes se sont ouvertes.</p>
+
+<p>Quand Ethan Marcotte a démontré le pouvoir du responsive design, il a rencontré une résistance. “Bien sûr, un design responsive peut marcher pour un simple site personnel mais il n’a aucun moyen de pouvoir s‘adapter à un projet large et complexe.”</p>
+
+<p>Puis le Boston Globe a lancé un site responsive. Microsoft a construit sa première page responsive. Les vannes s’ouvrent à nouveau.</p>
+
+<p>C'est une histoire similaire aujourd'hui. "Bien sûr, l'amélioration progressive peut fonctionner pour un simple site personnel, mais il n'y a aucun moyen de s'adapter à un grand projet complexe.”</p>
+
+<p>Les vannes sont prêtes à s'ouvrir. Nous avons juste besoin de vous pour créer l'affiche pour une conception Web résiliente.</p>
+
+</section>
+
+<section aria-labelledby="thisistoodifficult">
+
+<h2 id="thisistoodifficult">“C’est trop difficile”</h2>
+
+<p>Créer des sites Web résilients est un défi. Il faut du temps pour appliquer les fonctionnalités et les faire fonctionner de manière réfléchie. La récompense est un site Web qui peut mieux réagir à des circonstances inattendues - navigateurs inhabituels, connexions réseau irrégulières, appareils obsolètes. Néanmoins, pour de nombreux concepteurs Web, le coût en temps semble trop élevé.</p>
+
+<p>Il convient de rappeler que construire avec une amélioration progressive ne signifie pas que <em>tout</em> doit être mis à la disposition de <em>tous</em>.  Au lieu de cela, c'est la fonctionnalité de base qui compte. Si chaque fonctionnalité devait être disponible pour chaque navigateur sur chaque appareil, ce serait en effet un processus incroyablement ardu. C'est pourquoi la priorisation est si importante. Tant que la fonctionnalité de base est disponible en utilisant la technologie la plus simple possible, vous pouvez, en toute conscience, appliquer des fonctionnalités plus avancées.</p>
+
+<p>Il est tout de même tout à fait possible que cette approche entraîne un double emploi. Si vous construisez un ancien serveur fashion avec un processus de soumission des formulaires et que vous l’améliorez avec du JavaScript, vous devez quand même à la fin répéter le même processus du client, encore une fois sur le serveur. Cela peut être aussi migré si vous n'utilisez que du JavaScript sur le serveur. Il est théoriquement possible d'écrire un JavaScript universel de sorte que le serveur et le navigateur partagent une seule base de code. Même sans JavaScript universel, je pense encore que ce n’est pas la meilleur solution que d’utiliser son temps à créer des crédits techniques.</p>
+
+<p>Le manuel de conception des services gouvernementaux du <abbr>Royaume-Uni</abbr> offre une forme encore plus courte du processus en trois étapes que j’ai décrit :</p>
+
+<ol>
+<li>Premièrement, il faut juste le faire marcher</li>
+<li>Deuxièmement, il faut mieux le faire marcher</li>
+</ol>
+
+<p>Le manuel de conception explique aussi pourquoi :</p>
+
+<blockquote>
+<p>Si vous construisez des pages avec l’idée que les parties autres que le <abbr>HTML</abbr> sont facultatives, vous créerez une page Web meilleure et plus forte.</p>
+</blockquote>
+
+<p>Ce type de résilience montre que le temps que l’on investit dans front est bien investi. vous pouvez aussi noter une chose intéressante; plus on utilise ce processus, moins il faudra de temps.</p>
+
+<p>Bouger des  <code class="markup element">TABLE</code>s au <abbr>CSS</abbr> semble être quelque chose d'idéal impossible à atteindre. Les designers utilisent de manière confortable les <code class="markup element">TABLE</code> and <code class="markup element">FONT</code> pour la mise en page. Pourquoi voudraient-ils apprendre une nouvelle manière de travailler ? Je me rappelle comment c’était compliqué de faire ma première mise en page en <abbr>CSS</abbr>‐après avoir utilisé pendant une année des hacks. Cela m'a pris un peu de temps. Mais ma seconde mise en page en <abbr>CSS</abbr>‐ne m’a pas pris autant de temps. Après un temps, cela devient normal.</p>
+
+<p>Les designers qui sont confortables avec des dispositions de largeur fixe ont eu du mal avec le design responsive. Cette première configuration flexible allait inévitablement prendre un certain temps à construire. Mais la deuxième configuration responsive n’a pas pris autant de temps. Au bout d’un moment, c’est devenu normal.</p>
+
+<p>Il n’y a pas de différence avec l’approche à plusieurs niveaux nécessaire pour créer des sites Web résilients. Si vous n’êtes pas habitué à travailler de cette façon, la première fois que vous le faites, il faudra beaucoup de temps. Mais la deuxième fois ne prendra pas autant de temps. Au bout d’un moment, ça deviendra normal.</p>
+
+<p>Il y a aussi plusieurs situations où l’approche en 3 étapes ne marchera pas, mais elles ne sont pas aussi communes que vous le pensez. Si vous faites un jeux vidéo en 3<abbr>D</abbr> sur une page internet, la simple technologie capable d’assumer toutes ces fonctionnalités deviendra beaucoup plus complexe. Comme je l’ai dit, j’aime voir un simple jeu textuel d’aventure évoluer en un jeu de tire en vue première personne.</p>
+
+</section>
+
+<section aria-labelledby="howdoiconvince">
+
+<h2 id="howdoiconvince">“Comment convaincre...?”</h2>
+
+<p>La brillante informaticienne <span id="Grace%20Hopper">Grace Hopper</span>  a gardé une montre inhabituelle sur son mur. Elle fonctionnait dans le sens inverse des aiguilles d’une montre. Lorsqu'on lui a posé des questions à ce sujet, elle a souligné qu’il s’agissait d’une convention arbitraire, disant :</p>
+
+<blockquote>
+<p>L’homme est allergique au changement.  Ils aiment dire, “Nous avons tout fini grâce à cette solution. "J’essaye de combattre cela. C’est pourquoi, j’ai une montre sur mon mur qui tourne dans le sens inverse des aiguilles d’une montre"</p>
+</blockquote>
+
+<figure>
+<picture>
+<source media="all and (min-width: 75em)" srcset="images/large/grace-hopper.jpg" />
+<source media="all and (min-width: 50em)" srcset="images/medium/grace-hopper.jpg, images/large/grace-hopper.jpg 1.5x" />
+<img src="images/small/grace-hopper.jpg" alt="Grace Hopper in uniform in front of an American flag." srcset="images/medium/grace-hopper.jpg 2x, images/large/grace-hopper.jpg 3x" />
+</picture>
+<figcaption>Commandant Grace M.Hopper, United States Navy.
+</figcaption>
+</figure>
+
+<p>Le changement de comportement est difficile. Même si vous êtes convaincu des avantages d’une approche résiliente en matière de conception de sites Web, vous pourriez avoir du mal à convaincre vos collègues, votre patron ou vos clients. C’était toujours ainsi. Prenez le confort de l’histoire des normes Web et du design adaptatif. Ces approches ont finalement été adoptées par des gens qui étaient initialement résistants.</p>
+
+<p>Démontrer les avantages de l’amélioration progressive peut être difficile. Parce que le gain se produit dans des circonstances inattendues, l’approche à plusieurs niveaux est difficile à vendre. Plusieurs personnes ne sauront jamais comment un site est fait d’une manière résiliente. C’est une marque de qualité cachée qui ne sera pas notifiée par les personnes qui ont un navigateur moderne sur un nouvel ordinateur avec une connexion rapide.</p>
+
+<p>C’est pour les mêmes raisons, que vous pouvez intégrer cette approche responsive sans avoir à convaincre vos collègues, votre chef, ou vos clients. Si ils n’y portent pas attention, alors il ne le verront jamais. C’est pour ça que Grace Hopper a aussi dit, “C’est plus facile de demander pardon que de demander la permission.”</p>
+
+</section>
+
+<section aria-labelledby="tools">
+
+<h2 id="tools">Outils</h2>
+
+<p>Il peut être particulièrement difficile de modifier un flux de travail ou un processus s’il entre en conflit avec les outils utilisés. Un outil est censé aider les gens à faire leur travail de façon plus efficace. L’outil devrait être subordonné au flux de travail. Trop souvent, les outils dictent plutôt une façon de travailler préférée? Qu’il s'agisse d’éditeurs <abbr>WYSIWYG</abbr>,de programmes de conception graphique,de systèmes de gestion de contenu ou de cadres JavaScript, les outils influencent inévitablement les flux de travail.</p>
+
+<p>Si vous êtes conscient de cette influence et que vous pouvez la reconnaître, alors vous êtes mieux placé pour choisir les outils qui vous conviennent le mieux. Il y a plusieurs facteurs qui jouent dans le choix d’un cadre de travail, par exemple : “Esque cela est bien écrit ?”, “Es-que il y a une communauté active derrière ?,”Est-ce que la documentation est claire ?”.
+Mais outre cela, la plus importante des questions à demander reste, “Es-que cette approche est en lien avec  ma propre philosophie?"
+</p>
+
+<p>Tous les cadres de travail ont leur philosophie, parce que tous les cadres de travail ont été écrits par des personnes. Si votre philosophie s'aligne avec le cadre de travail, alors cela va vous aider à travailler plus efficacement. Mais si votre philosophie ne va pas avec votre cadre de travail alors, vous allez vous battre à chaque étape pendant tout le chemin. Il pourrait même être tentant d’abandonner et laisser le cadre dicter votre flux de travail. Puis la queue du chien serait agitée.</p>
+
+<p>Choisissait un outil sagement. Cela serait terriblement honteux d'abandonner l’approche résiliente du web design parce que une différence d’opinion avec une partie d’un logiciel.</p>
+
+<p>Les divergences d’opinion se résument souvent à une inadéquation des priorités. Au cœur, l’approche progressive d’amélioration priorise les besoins des personnes, indépendamment de leur technologie. Les outils, les cadres et les bibliothèques de code, par contre, sont souvent conçus pour prioriser les besoins des concepteurs et des développeurs. Ce n’est pas une mauvaise chose. La commodité des développeurs est extrêmement précieuse. Mais personnellement, je pense que les besoins des utilisateurs devraient l’emporter sur la commodité des développeurs.</p>
+
+<p>Quand je suis confronté à un problème, je dois faire un choix entre faire de ce problème, celui de l’utilisateur ou mon problème. J’en fait tout le temps mon problème. C’est mon travail.</p>
+
+</section>
+
+<section aria-labelledby="futurefriendly">
+
+<h2 id="futurefriendly">Future amitié</h2>
+
+<p>En septembre 2011, j’étais en conférence au Tennessee avec des personnes beaucoup plus intelligentes que moi.  Une fois l’événement officiel terminé, nous nous sommes envolés pour la campagne où nous avions loué une maison pour quelques jours. Nous nous réunissions pour essayer de comprendre où le web allait.</p>
+
+<figure>
+<picture>
+<source media="all and (min-width: 75em)" srcset="images/large/devices.jpg" />
+<source media="all and (min-width: 50em)" srcset="images/medium/devices.jpg, images/large/devices.jpg 1.5x" />
+<img src="images/small/devices.jpg" alt="A jumbled pile of phones, tablets, e‐readers." srcset="images/medium/devices.jpg 2x, images/large/devices.jpg 3x" />
+</picture>
+<figcaption>Une petite partie des appareils connectés internet.</figcaption>
+</figure>
+
+<p>Franchement, nous étions paniqués. La prolifération des appareils mobiles avait tout changé. Les tablettes étaient à la hausse. Les gens parlaient des <abbr>télévisions</abbr> sur Internet. Nous espérions savoir quelle serait la prochaine grande chose. Les réfrigérateurs sur Internet, peut-être?</p>
+
+<p>En fin de compte, la seule chose dont nous pouvions être certains était l’incertitude:</p>
+
+<blockquote>
+<p>Les perturbations ne feront qu’accélérer. La quantité et la diversité des dispositifs connectés dont bon nombre n’ont pas encore été imaginés exploseront, tout comme la quantité et la diversité des personnes qui les utilisent partout dans le monde.</p>
+</blockquote>
+
+<p>Ce n’est pas une cause de désespoir; c’est un motif de célébration. Nous pourrions combattre cet avenir ou l’embrasser. Réalisant qu’il était impossible d’être la preuve de l’avenir, nous avons plutôt décidé d’être respectueux de l’avenir :</p>
+
+<ol>
+<li>Reconnaître et accepter l’imprévisibilité.</li>
+<li>Penser et se comporter.</li>
+<li>Aidez les autres à faire de même.</li>
+</ol>
+
+<p>Cette première étape est la plus importante : reconnaître et accepter l’imprévisibilité. C’est la force motrice de la conception de réseaux résilients. La meilleure façon d’être respectueux de l’avenir est d’être rétrocompatible.</p>
+
+<figure>
+<picture>
+<source media="all and (min-width: 75em)" srcset="images/large/future-friendly.png" />
+<source media="all and (min-width: 50em)" srcset="images/medium/future-friendly.png, images/large/future-friendly.png 1.5x" />
+<img src="images/small/future-friendly.png" alt="A child’s space helmet." srcset="images/medium/future-friendly.png 2x, images/large/future-friendly.png 3x" />
+</picture>
+<figcaption>Le futur symbole de l’amitié.</figcaption>
+</figure>
+
+</section>
+
+<section aria-labelledby="assumptions">
+
+<h2 id="assumptions">Hypothèses</h2>
+
+<p>« Nous exigeons des zones de doute et d’incertitude rigoureusement définies! » a crié le philosophe <span id="Douglas%20Adams">Douglas Adams</span>’ <cite id="Hitchhiker’s%20Guide%20To%20The%20Galaxy">Hitchhiker’s Guide to the Galaxy</cite>.</p>
+
+<p>En tant que machines de mise en correspondance des motifs, nous sommes rapides pour identifier les tendances et les codifier en hypothèses. Ici nous avons quelques hypothèses que nous avons construit tout au long de l'histoire autour du web design :</p>
+
+<ul>
+<li>Tout le monde à un moniteur qui fait du 640 pixels de large.</li>
+<li>Tout le monde à la plugin Flash installé.</li>
+<li>Tout le monde à un moniteur qui fait du 800 pixels de large.</li>
+<li>Tout le monde à une souris et un clavier.</li>
+<li>Tout le monde a un moniteur qui fait du 1024 pixels de large</li>
+<li>Tout le monde à une connection internet rapide</li>
+</ul>
+
+<p>La prolifération des appareils mobiles a sortie c’est hypothèses hors de l’eau. L’aire des mobiles n’a pas créé d’incertitudes-au contraire, il a mis en lumière les incertitudes qui existaient déjà.</p>
+
+<p>Cela aurait dû être une leçon précieuse. Mais, avant trop longtemps, les anciennes hypothèses ont été remplacées par de nouvelles :</p>
+
+<ul>
+<li>Il y a certaines activités que des personnes ne voudront jamais faire sur leur téléphone.</li>
+<li>Tous les téléphones sont tactiles.</li>
+<li>Tous ceux qui utilisent un téléphone sont pressés.</li>
+<li>Tous les navigateurs, sur tous les téléphones supportent du JavaScript.</li>
+</ul>
+
+<p>C’est ce type d’hypothèse qui m’ont toujours rappelé les vieilles blagues de physiciens. « Supposez un navigateur Web parfaitement sphérique… »</p>
+
+<p>Les hypothèses sont séduisantes. Si seulement nous pouvions affirmer certaines limites, alors le web design ne serait-il pas tellement plus facile à utiliser ?</p>
+
+<p>Aussi tentant que soit cet appel à la sirène, il obscurcit la vraie nature du web incertain en constante évolution. <span id="Carl%20Sagan">Carl Sagan</span> l’a bien dit dans son livre <cite>The <span id="Demon‐Haunted%20World">Demon‐Haunted World</span></cite>:</p>
+
+<blockquote>
+<p>“Il vaut beaucoup mieux saisir l’univers tel qu’il est réellement que de persister dans l’illusion, aussi satisfaisante et rassurante soit-elle.”</p>
+</blockquote>
+
+</section>
+
+<section aria-labelledby="thefuture">
+
+<h2 id="thefuture">Le futur</h2>
+
+<p>J’aimerais prédire le futur. La seule chose que je peux prédire avec certitude c’est que les choses sont en train de changer.
+</p>
+
+<p>Je ne sais pas quel type d’appareils les personnes utiliseront pour le web. Je ne sais pas quel type de logiciel les personnes utiliseront pour le web.</p>
+
+<p>Le futur, comme le web, est inconnu.</p>
+
+<p>Le futur, comme le web, seront écrits par vous.</p>
+
+</section>
+
+<aside>
+<h2>Références</h2>
+<ol>
+<li><a href="https://www.gov.uk/service-manual"><cite>Government Service Design Manual</cite></a></li>
+<li><a href="http://futurefriendlyweb.com/"><cite>Future Friendly</cite></a></li>
+</ol>
+</aside>
+
+</main>
+
+<nav>
+<a href="../author/" rel="next"><cite>About the author</cite></a>
+<ol start="0">
+<li><a href="../introduction/"><cite>Introduction</cite></a></li>
+<li><a href="../chapter1/"><cite><span>Chapitre 1</span> Fondations</cite></a></li>
+<li><a href="../chapter2/"><cite><span>Chapitre 2</span> Matériaux</cite></a></li>
+<li><a href="../chapter3/"><cite><span>Chapitre 3</span> Visions</cite></a></li>
+<li><a href="../chapter4/"><cite><span>Chapitre 4</span> Langues</cite></a></li>
+<li><a href="../chapter5/"><cite><span>Chapitre 5</span> Couches</cite></a></li>
+<li><a href="../chapter6/"><cite><span>Chapitre 6</span> Etapes</cite></a></li>
+<li><a href="../chapter7/"><cite><span>Chapitre 7</span> Challenges</cite></a></li>
+<li><a href="../author/" rel="author"><cite>A propos de l'auteur</cite></a></li>
+<li><a href="../index/"><cite>Index</cite></a></li>
+</ol>
+</nav>
+
+<footer>
+<p><cite>Resilient Web Design</cite> a était écrit et produit par <a href="https://adactio.com" class="v‐card">Jeremy Keith</a>, et taper dans <a href="https://edwardtufte.github.io/et-book/"><abbr>ET</abbr> Book</a>.</p>
+<p><small>Protégés par une <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution‐ShareAlike 4.0 International License</a>.</small></p>
+</footer>
+
+<script src="../js/scripts.js" defer></script>
+</body>
+</html>
