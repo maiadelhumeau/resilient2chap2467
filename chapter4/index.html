@@ -151,42 +151,46 @@
 
 <section aria-labelledby="appiness">
 
-<h2 id="appiness">Appiness</h2>
+<h2 id="appiness">Appliance</h2>
 
-<p>In the 1964 supreme court case <span id="Jacobellis%20versus%20Ohio">Jacobellis versus Ohio</span>, Justice <span id="Potter%20Stewart">Potter Stewart</span> provided this definition of obscenity:</p>
+<p>Dans l'affaire Jacobellis contre Ohio, jugée par la Cour suprême en 1964, <span id="Jacobellis%20versus%20Ohio"></span> <span id="Potter%20Stewart">le juge Potter Stewart</span> a donné cette définition de l'obscénité :</p>
 
 <blockquote>
-<p>I know it when I see it.</p>
+<p>Je le sais quand je le vois.</p>
 </blockquote>
 
-<p>The same could be said for Web 2.0, or for the term “web app.” We can all point to examples of web apps, but it’s trickier to provide a definition for the term. Web apps allow people to create, edit, and delete content. But these tasks were common long before web apps arrived. People could fill in forms and submit them to a web server for processing. Ajax removed the necessity for that round trip to the server.</p>
+<p>On pourrait dire la même chose du Web 2.0, ou du terme "web app". Nous pouvons tous citer des exemples d'applications web, mais il est plus difficile de donner une définition du terme. Les applications web permettent aux gens de créer, de modifier et de supprimer du contenu. Mais ces tâches étaient courantes bien avant l'arrivée des applications web. Les gens pouvaient remplir des formulaires et les soumettre à un serveur web pour traitement. Ajax a supprimé la nécessité d'un aller-retour au serveur.</p>
 
-<p>Perhaps the definition of a web app requires some circular reasoning:</p>
+<p>
+Peut-être la définition d'une application web nécessite-t-elle un raisonnement circulaire :
+</p>
 
 <ul>
-<li>JavaScript is a requirement for a web app, and</li>
-<li>a web app is a website that requires JavaScript to work.</li>
+<li>JavaScript est une exigence pour une application web, et</li>
+<li>une application web est un site web qui nécessite JavaScript pour fonctionner.</li>
 </ul>
 
-<p>In that case, building web apps depends on a fundamental assumption: JavaScript must be available and reliable. But because of its imperative nature, JavaScript tends to be more fragile than a declarative language like <abbr>HTML</abbr>. Relying on JavaScript might not be such a safe assumption after all.</p>
+<p>Dans ce cas, la création d'applications web dépend d'une hypothèse fondamentale : JavaScript doit être disponible et fiable. Mais en raison de sa nature impérative, JavaScript tend à être plus fragile qu'un langage déclaratif comme HTML. Compter sur JavaScript n'est peut-être pas une hypothèse aussi sûre après tout.</p>
 
 </section>
 
 <section aria-labelledby="unforgiven">
 
-<h2 id="unforgiven">Unforgiven</h2>
+<h2 id="unforgiven">
+Impardonnable
+</h2>
 
-<p><abbr>HTML</abbr>’s loose error‐handling allowed it to grow in power over time. It also ensured that the language was easy to learn. Even if you made a mistake, the browser’s implementation of Postel’s Law ensured that you’d still get a result. Surprisingly, there was an attempt to remove this superpower from <abbr>HTML</abbr>.</p>
+<p>Le traitement souple des erreurs du <abbr>HTML</abbr> lui a permis de gagner en puissance au fil du temps. Il a également permis de garantir la facilité d'apprentissage du langage. Même si vous faites une erreur, l'application de la loi Postel par le navigateur vous garantit un résultat. Étonnamment, il y a eu une tentative de supprimer ce super pouvoir du <abbr>HTML</abbr>.</p>
 
-<p>After the standardisation of <abbr>HTML</abbr> version 4 in 1999, the World Wide Web Consortium published <abbr id="XHTML">XHTML</abbr> 1.0. This reformulated <abbr>HTML</abbr> according to the rules of the <abbr id="XML">XML</abbr> data format. Whereas <abbr>HTML</abbr> can have uppercase or lowercase tag names and attributes, <abbr>XML</abbr> requires them to be all lowercase. There were some other differences: all attributes had to be quoted, and standalone elements like <code class="markup element">IMG</code> or <code class="markup element">BR</code> required a closing slash.</p>
+<p>Après la normalisation de la version 4 de <abbr>HTML</abbr> en 1999, le World Wide Web Consortium a publié <abbr id="XHTML">XHTML</abbr> 1.0.  Celui-ci a reformulé le <abbr>HTML</abbr> selon les règles du format de données <abbr id="XML">XML</abbr>. Alors que le <abbr>HTML</abbr> peut avoir des noms de balises et des attributs en majuscules ou en minuscules, le <abbr>XML</abbr> exige qu'ils soient tous en minuscules.  Il y avait d'autres différences : tous les attributs doivent être cités, et les éléments autonomes comme les <code class="markup element">IMG</code> ou les <code class="markup element">BR</code> nécessitent un slash.</p>
 
-<p><abbr>XHTML</abbr> 1.0 didn’t add any new features to the language. It was simply a stricter way of writing markup. <abbr>XHTML</abbr> 2.0 was a different proposition. Not only would it remove established elements like <code class="markup element">IMG</code>, it would also implement <abbr>XML</abbr>’s draconian error‐handling model. If there is a single error in an <abbr>XML</abbr> document—one unquoted attribute or missing closing slash—then the parser should stop immediately and refuse to render anything.</p>
+<p>Le <abbr>XHTML</abbr> 1.0 n'a pas ajouté de nouvelles fonctionnalités au langage. Il s'agit simplement d'une façon plus stricte d'écrire les balises. <abbr>XHTML</abbr> 2.0  était une proposition différente. Non seulement il supprimait des éléments établis comme l'<code class="markup element">IMG</code>, mais il mettait également en œuvre le modèle draconien de traitement des erreurs du <abbr>XML</abbr>.S'il y a une seule erreur dans un document <abbr>XML</abbr>  - un attribut non cité ou un slash manquant - l'analyseur devrait alors s'arrêter immédiatement et refuser de produire quoi que ce soit.</p>
 
-<p><abbr>XHTML</abbr> 2.0 died on the vine. Its theoretical purity was roundly rejected by the people who actually made websites for a living. Web designers rightly refused to publish in a format that would fail completely instead of trying to recover from an error.</p>
+<p>Le <abbr>XHTML</abbr> 2.0 est mort sur la vigne. Sa pureté théorique a été rejetée par les personnes qui ont créé des sites web pour gagner leur vie. Les concepteurs de sites web ont refusé à juste titre de publier dans un format qui échouerait complètement au lieu d'essayer de se remettre d'une erreur.</p>
 
-<p>Strange then, that years later, web designers would happily create entire websites using JavaScript, a language that shares <abbr>XML</abbr>’s unforgiving error‐handling model. They didn’t call them websites. They called them web apps. That distinction was cold comfort to someone who couldn’t complete their task because a service relied on JavaScript for crucial functionality.</p>
+<p>Il est donc étrange que, des années plus tard, les concepteurs de sites web se contentent de créer des sites entiers en utilisant JavaScript, un langage qui partage l'impitoyable modèle de traitement des erreurs de <abbr>XML</abbr>.Ils ne les appelaient pas des sites web. Ils les appelaient des applications web. Cette distinction n'était qu'une maigre consolation pour quelqu'un qui ne pouvait pas accomplir sa tâche parce qu'un service dépendait de JavaScript pour une fonctionnalité cruciale.</p>
 
-<p>Despite JavaScript’s fragile error‐handling model, web designers became more reliant on JavaScript over time. In 2015, <abbr id="NASA">NASA</abbr> relaunched its website as a web app. If you wanted to read the latest news of the agency’s space exploration efforts, you first had to download and execute three megabytes of JavaScript. This content—text and images—could have been delivered in the <abbr>HTML</abbr>, but the developers decided to use Ajax to retrieve this data instead. Until all that JavaScript was loaded, parsed, and executed, visitors to the site were left staring at a black background. Perhaps this was intended as a demonstration of the vast lonely emptiness of space.</p>
+<p>Malgré la fragilité du modèle de traitement des erreurs de JavaScript, les concepteurs de sites web sont devenus de plus en plus dépendants de JavaScript au fil du temps. En 2015, la<abbr id="NASA">NASA</abbr> a lancé son site web sous forme d'application web. Si vous voulez lire les dernières nouvelles des efforts d'exploration spatiale de l'agence, vous devez d'abord télécharger et exécuter trois mégaoctets de JavaScript. Ce contenu - texte et images - aurait pu être livré en <abbr>HTML</abbr>, mais les développeurs ont décidé d'utiliser Ajax pour récupérer ces données à la place. Jusqu'à ce que tout ce JavaScript soit chargé, analysé et exécuté, les visiteurs du site restaient devant un fond noir. Peut-être cela était-il destiné à démontrer le vaste vide solitaire de l'espace.</p>
 
 <figure>
 <picture>
@@ -197,9 +201,10 @@
 <figcaption>The 2015 version of the nasa.gov website with incomplete JavaScript.</figcaption>
 </figure>
 
-<p>This highlights another difference between <abbr>HTML</abbr> and JavaScript. Whereas <abbr>HTML</abbr> can be rendered piece by piece as it is downloaded, a JavaScript file must be downloaded in its entirety before its contents can be parsed. While it’s tempting to think that only a small minority of visitors will miss out on a site’s JavaScript, the truth is that everybody is a non‐JavaScript user until the JavaScript has finished loading ...<em>if</em> the JavaScript finishes loading. Flaky connections, interfering network operators, and unpredictable ad‐blocking software can torpedo the assumption that JavaScript will always be available.</p>
+<p>Cela met en évidence une autre différence entre <abbr>HTML</abbr> et JavaScript. Alors que le <abbr>HTML</abbr> peut être rendu morceau par morceau au fur et à mesure de son téléchargement, un fichier JavaScript doit être téléchargé dans son intégralité avant que son contenu puisse être analysé. Bien qu'il soit tentant de penser que seule une petite minorité de visiteurs n'aura pas accès au JavaScript d'un site, la vérité est que tout le monde est un utilisateur non-JavaScript jusqu'à ce que le JavaScript ait fini de se charger ...<em>si</em> le JavaScript finit de se charger. Des connexions défaillantes, des opérateurs de réseau interférents et des logiciels de blocage des publicités imprévisibles peuvent torpiller l'hypothèse selon laquelle le JavaScript sera toujours disponible.
+</p>
 
-<p>The problem is not with people deliberately disabling JavaScript in their browsers. Although that’s a use case worth considering, it’s not the most common cause of JavaScript errors. <span id="Stuart%20Langridge">Stuart Langridge</span> put together a list of all the potential points of failure under the title <cite id="Everyone%20has%20JavaScript,%20right?">Everyone has JavaScript, right?</cite></p>
+<p>Le problème n'est pas que les gens désactivent délibérément le JavaScript dans leur navigateur. Bien que ce soit un cas d'utilisation qui mérite d'être pris en considération, ce n'est pas la cause la plus fréquente des erreurs de JavaScript. <span id="Stuart%20Langridge">Stuart Langridge</span> put together a list of all the potential points of failure under the title <cite id="Everyone%20has%20JavaScript,%20right?">Everyone has JavaScript, right?</cite></p>
 
 <blockquote>
 <p>The user requests your web app. Has the page loaded yet? Did the <abbr>HTTP</abbr> request for the JavaScript succeed? Did the <abbr>HTTP</abbr> request for the JavaScript complete? Does the corporate firewall block JavaScript? Does their <abbr>ISP</abbr> or mobile operator interfere with downloaded JavaScript? Have they switched off JavaScript? Do they have add‐ons or plug‐ins installed which inject script or alter the <abbr>DOM</abbr> in ways you didn’t anticipate? Is the Content Delivery Network up? Does their browser support the JavaScript you’ve written?</p>
