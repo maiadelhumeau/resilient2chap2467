@@ -67,69 +67,69 @@
 
 <p>La plupart des langages de programmation ne sont pas déclaratifs, ils sont impératifs. Perl, Java, C++ … voilà des exemples de langages impératifs. Si vous écrivez avec un de ces langages, vous devez donner des instructions précises pour que l’ordinateur comprenne le code.</p>
 
-<p>Les langues impératives vous offrent plus de puissance et de précision que les langues déclaratives. Cela a un prix.  Les langues impératives ont tendance à être plus difficiles à apprendre que les langues déclaratives. Il est également plus difficile d'appliquer la loi de Postel aux langues impératives. Si vous faites une seule erreur - une virgule ou un point-virgule mal placé - le programme entier peut échouer. A misspelt tag in <abbr>HTML</abbr> or a missing curly brace in <abbr>CSS</abbr> can also cause headaches, but imperative programs must be well‐formed or they won’t run at all.</p>
+<p>Les langues impératives vous offrent plus de puissance et de précision que les langues déclaratives. Cela a un prix.  Les langues impératives ont tendance à être plus difficiles à apprendre que les langues déclaratives. Il est également plus difficile d'appliquer la loi de Postel aux langues impératives. Si vous faites une seule erreur - une virgule ou un point-virgule mal placé - le programme entier peut échouer. Une balise mal orthographiée en <abbr>HTML</abbr> ou une accolade manquante en <abbr>CSS</abbr> peuvent également causer des maux de tête, mais les programmes impératifs doivent être bien formés, sinon ils ne fonctionneront pas du tout.</p>
 
-<p>Imperative languages such as <abbr>PHP</abbr>, Ruby, and Python can be found on the servers powering the World Wide Web, reading and writing database records, processing input, and running complex algorithms. You can choose just about any programming language you want when writing server‐side code. Unlike the unknowability of the end user’s web browser, you have control over your server’s capabilities.</p>
+<p>Des langages impératifs tels que <abbr>PHP</abbr>, Ruby, et Python se trouvent sur les serveurs qui alimentent le World Wide Web, lisent et écrivent les enregistrements des bases de données, traitent les entrées et exécutent des algorithmes complexes. Vous pouvez choisir à peu près n'importe quel langage de programmation lorsque vous écrivez du code côté serveur. Contrairement à l'inconnaissabilité du navigateur web de l'utilisateur final, vous avez le contrôle des capacités de votre serveur.</p>
 
-<p>If you want to write imperative code that runs in a web browser, you only have one choice: <span id="JavaScript">JavaScript</span>.</p>
+<p>Si vous voulez écrire du code impératif qui fonctionne dans un navigateur web, vous n'avez qu'un seul choix : <span id="JavaScript">JavaScript</span>.</p>
 
 </section>
 
 <section aria-labelledby="scripting">
 
-<h2 id="scripting">Scripting</h2>
+<h2 id="scripting">Script</h2>
 
-<p>The idea of executing a program from within a web page is as old as the web itself. Here’s an early email to the www‐talk mailing list:</p>
-
-<blockquote>
-<p>I would like to know, whether anybody has extended <abbr>WWW</abbr> such, that it is possible to start arbitrary programs by hitting a button in a <abbr>WWW</abbr> browser.</p>
-</blockquote>
-
-<p>Tim Berners‐Lee, creator of the World Wide Web, responded:</p>
+<p>L'idée d'exécuter un programme à partir d'une page Web est aussi ancienne que le Web lui-même. Voici un premier e-mail à la liste de diffusion www-talk:</p>
 
 <blockquote>
-<p>Very good question. The problem is that of programming language. You need something really powerful, but at the same time ubiquitous. Remember a facet of the web is universal readership. There is no universal interpreted programming language.</p>
+<p>J’aimerais savoir si quelqu'un a étendu <abbr>WWW</abbr> de telle sorte qu'il soit possible de démarrer des programmes arbitraires en appuyant sur un bouton <abbr>WWW</abbr>dans un navigateur.</p>
 </blockquote>
 
-<p>That was in 1992. The universal interpreted programming language finally arrived in 1996. It was written in ten days by a programmer at Netscape named <span id="Brendan%20Eich">Brendan Eich</span>.</p>
+<p>Tim Berners Lee, le créateur du World Wide Web a répondu :</p>
 
-<p>The language went through a few name changes. First it was called Mocha. Then it was officially launched as LiveScript. Then the marketing department swept in and renamed it JavaScript, hoping that the name would ride the wave of hype associated with the then‐new Java language. In truth, the languages have little in common. Java is to JavaScript as ham is to hamster.</p>
+<blockquote>
+<p>Très bonne question. Le problème est celui du langage de programmation. Vous avez besoin de quelque chose de vraiment puissant, mais en même temps omniprésent. N'oubliez pas qu'une facette du Web est le lectorat universel. Il n'y a pas de langage de programmation interprété universel.</p>
+</blockquote>
+
+<p>C’était en 1992. Le langage de programmation interprété universel est finalement arrivé en 1996. Il a été écrit en dix jours par un programmeur de Netscape nommé <span id="Brendan%20Eich">Brendan Eich</span>.</p>
+
+<p>La langue a subi quelques changements de nom. D'abord, elle s'appelait Mocha. Ensuite, elle a été officiellement lancée en tant que LiveScript. Le département marketing l'a ensuite adopté et renommé JavaScript, espérant que le nom surpasserait la vague de publicité associée au nouveau langage Java de l'époque. En réalité, ces langues n'ont pas grand-chose en commun. Java est au JavaScript ce que le jambon est au hamster.</p>
 
 </section>
 
 <section aria-labelledby="patternsofprogress">
 
-<h2 id="patternsofprogress">Patterns of progress</h2>
+<h2 id="patternsofprogress">Modèles de progrès</h2>
 
-<p>JavaScript gave designers the power to update web pages even after they had loaded. Two common uses soon emerged: rollovers and form validation.</p>
+<p>JavaScript a donné aux designers le pouvoir de mettre à jour les pages web même après leur chargement. Deux utilisations communes sont rapidement apparues : la reconduction et la validation des formulaires.</p>
 
-<p>Swapping out images when someone hovers their cursor over a link might not seem like a sensible use of a brand new programming language, but back in the nineties there was no other way of creating hover effects.</p>
+<p>L'échange d'images lorsque quelqu'un passe son curseur sur un lien peut ne semble peut être pas être une utilisation judicieuse d'un tout nouveau langage de programmation, mais dans les années 90, il n'y avait pas d'autre moyen de créer des effets de survol.</p>
 
-<p>Before JavaScript came along, a form would have to be submitted to a web server before you could check to make sure that all the required fields were filled in, or that the information that was entered corresponded to an expected format.</p>
+<p>Avant l'arrivée de JavaScript, un formulaire devait être soumis à un serveur web avant que vous puissiez vérifier que tous les champs requis étaient remplis ou que les informations saisies correspondaient à un format attendu.</p>
 
-<p>Both of those use cases still exist, but now there’s no need to reach for JavaScript. You can create rollover effects using the <code>:hover</code> pseudo‐class in <abbr>CSS</abbr>. You can validate form fields using the <code class="markup attribute">REQUIRED</code> and <code class="markup attribute">TYPE</code> attributes in <abbr>HTML</abbr>.</p>
+<p>Ces deux cas d'utilisation existent toujours, mais il n'est plus nécessaire d'atteindre JavaScript. Vous pouvez créer des effets de survol en utilisant la pseudo-classe <code>:hover</code> dans le <abbr>CSS</abbr>. Vous pouvez valider les champs du formulaire en utilisant les attributs <code class="markup attribute">REQUIRED</code> et <code class="markup attribute">TYPE</code> en<abbr>HTML</abbr>.</p>
 
-<p>That’s a pattern that repeats again and again: a solution is created in an imperative language and if it’s popular enough, it migrates to a declarative language over time. When a feature is available in a declarative language, not only is it easier to write, it’s also more robust.</p>
+<p>C'est un schéma qui se répète sans cesse : une solution est créée dans une langue impérative et si elle est assez populaire, elle migre vers une langue déclarative au fil du temps. Lorsqu'une fonctionnalité est disponible dans une langue déclarative, non seulement elle est plus facile à écrire, mais elle est aussi plus résistante.</p>
 
-<p>The loose error‐handling of <abbr>HTML</abbr> and <abbr>CSS</abbr> means that many authoring mistakes or browser support issues are handled gracefully; the browser simply ignores what it doesn’t understand and carries on. That’s often good enough. By contrast, if you give a browser some badly‐formed JavaScript or attempt to use an unsupported JavaScript feature, not only will the browser throw an error, it will stop parsing the script at that point and refuse to go any further.</p>
+<p>Le traitement souple des erreurs du <abbr>HTML</abbr> et du <abbr>CSS</abbr> signifie que de nombreuses erreurs de création ou des problèmes de prise en charge du navigateur sont traités avec grâce; le navigateur ignore simplement ce qu'il ne comprend pas et continue. C'est souvent suffisant. En revanche, si vous donnez à un navigateur un JavaScript mal formé ou si vous essayez d'utiliser une fonction JavaScript non prise en charge, non seulement le navigateur lancera une erreur, mais il cessera d'analyser le script à ce moment-là et refusera d'aller plus loin.</p>
 
 </section>
 
 <section aria-labelledby="responsibility">
 
-<h2 id="responsibility">Responsibility</h2>
+<h2 id="responsibility">Responsabilité</h2>
 
-<p>JavaScript gave web designers the power to create websites that were slicker, smoother, and more reactive. The same technology also gave web designers the power to create websites that were sluggish, unwieldy, and more difficult to use.</p>
+<p>JavaScript a donné aux concepteurs de sites web le pouvoir de créer des sites plus lisses, plus fluides et plus réactifs. La même technologie a également donné aux concepteurs de sites web le pouvoir de créer des sites web plus lents, plus lourds et plus difficiles à utiliser.</p>
 
-<p>One of the earliest abuses of JavaScript came (unsurprisingly) from the advertising industry, a business whose very raison d’être is often at odds with the goals of people trying to achieve a task as quickly as possible. JavaScript allows you to create new browser windows, something that previously could only be done by the user. A young developer named <span id="Ethan%20Zuckerman">Ethan Zuckerman</span> realised that he could spawn a new window with an advertisement in it. That allowed advertisers to put their message in front of website visitors. Not only that, but JavaScript could be used to spawn multiple windows, some of them visible, some of them hidden behind the current window. It was a fiendish solution.</p>
+<p>L'un des premiers abus de JavaScript est venu (sans surprise) de l'industrie de la publicité, une entreprise dont la raison d'être même est souvent en contradiction avec les objectifs des personnes qui essaient d'accomplir une tâche le plus rapidement possible. Le JavaScript permet de créer de nouvelles fenêtres de navigation, ce qui, auparavant, ne pouvait être fait que par l'utilisateur. Un jeune développeur nommé Ethan Zuckerman s'est rendu compte qu'il pouvait créer une nouvelle fenêtre contenant une publicité. Cela a permis aux annonceurs de faire passer leur message aux visiteurs du site. De plus, le JavaScript pouvait être utilisé pour créer plusieurs fenêtres, certaines visibles, d'autres cachées derrière la fenêtre actuelle. C'était une solution diabolique.</p>
 
-<p>Twenty years later, Zuckerman wrote:</p>
+<p>Vingt ans plus tard, a écrit:</p>
 
 <blockquote>
-<p>I wrote the code to launch the window and run an ad in it. I’m sorry.</p>
+<p>J'ai écrit le code pour lancer la fenêtre et y faire passer une annonce. Je suis désolé.</p>
 </blockquote>
 
-<p>Pop‐up (and pop‐under) windows became so intolerable that browsers had to provide people with a means to block them.</p>
+<p>Les fenêtres pop-up (et pop‐under) sont devenues si intolérables que les navigateurs ont dû fournir aux gens un moyen de les bloquer.</p>
 
 <p>The advertising industry later found other ways to abuse JavaScript. Ad‐supported online publishers injected bloated and inefficient JavaScript into their pages, making them slow to load. JavaScript was also used to track people from site to site. People reached for ad‐blocking software to combat this treatment. Eventually ad blocking was built into browsers and operating systems to give us the ability to battle excessive JavaScript.</p>
 
