@@ -38,8 +38,7 @@
 
 <h1><span>Chapter 2:</span> Materials</h1>
 
-<p>AU RISQUE TEACHING GRAND-
-mother to suck eggs, j'aimerais que vous réfléchissiez à ce qui se passe lorsqu'un navigateur analyse un élément<abbr>HTML</abbr>. Prenez, par exemple, un élément de paragraphe contenant du texte. Il y a une balise <code class="markup element">P</code> d'ouverture, une balise <code class="markup element">P</code> de fermeture, et entre ces balises, il y a le texte.
+<p>Au risque d'apprendre aux vieux singes à faire la grimace, j'aimerais que vous réfléchissiez à ce qui se passe lorsqu'un navigateur analyse un élément<abbr>HTML</abbr>. Prenez, par exemple, un élément de paragraphe contenant du texte. Il y a une balise <code class="markup element">P</code> d'ouverture, une balise <code class="markup element">P</code> de fermeture, et entre ces balises, il y a le texte.
 .</p>
 
 <pre><code>&lt;p&gt;du texte&lt;/p&gt;</code></pre>
@@ -53,19 +52,20 @@ mother to suck eggs, j'aimerais que vous réfléchissiez à ce qui se passe lors
 
 <p>Cette attitude libérale vis-à-vis des erreurs a permis au vocabulaire du<abbr>HTML</abbr> de croître avec le temps, passant des 21 éléments d'origine aux 121 éléments du <abbr>HTML</abbr>5. Chaque fois qu'un nouvel élément est introduit dans <abbr>HTML</abbr>, we know exactly how older browsers will treat it; they will ignore the tags and display the content.</p>
 
-<p>That’s a remarkably powerful feature. It allows browsers to implement new <abbr>HTML</abbr> features at different rates. We don’t have to wait for every browser to recognise a new element. Instead we can start using the new element at any time, secure in the knowledge that non‐supporting browsers won’t choke on it.</p>
+<p>C'est une fonctionnalité remarquablement puissante. Il permet aux navigateurs d'implémenter de nouvelles fonctionnalités<abbr>HTML</abbr> à des rythmes différents. Nous n'avons pas besoin d'attendre que chaque navigateur reconnaisse un nouvel élément. Au lieu de cela, nous pouvons commencer à utiliser le nouvel élément à tout moment, en sachant que les navigateurs non compatibles ne s'y étoufferont pas.</p>
 
-<pre><code>&lt;main&gt;this text will display in any browser&lt;/main&gt;</code></pre>
+<pre><code>&lt;main&gt;ce texte s’affichera dans n’importe quel navigateur&lt;/main&gt;</code></pre>
 
-<p>If web browsers treat all tags the same way—displaying their contents—then what’s the point of having a vocabulary of elements in <abbr>HTML</abbr>?</p>
+<p>Si les navigateurs Web traitent toutes les balises de la même manière - en affichant leur contenu - alors à quoi sert d'avoir un vocabulaire d'éléments en <abbr>HTML</abbr>?</p>
 
 <section aria-labelledby="themeaningofmarkup">
 
-<h2 id="themeaningofmarkup">The meaning of markup</h2>
+<h2 id="themeaningofmarkup">La signification du balisage</h2>
 
-<p>Some <abbr>HTML</abbr> elements are literally meaningless. The <code class="markup element">SPAN</code> element says nothing about the contents within it. As far as a web browser is concerned, you may as well use a non‐existent <code class="markup element">MARKLAR</code> element. But that’s the exception. Most <abbr>HTML</abbr> elements exist for a reason. They have been created and agreed upon in order to account for specific situations that authors like you and I are likely to encounter.</p>
+<p>Certains éléments <abbr>HTML</abbr> n'ont littéralement aucun sens. L'élément<code class="markup element">SPAN</code> ne dit rien sur le contenu qu'il contient. En ce qui concerne un navigateur Web, vous pouvez également utiliser un élément <code class="markup element">MARKLAR</code> inexistant. Mais c'est l'exception. La plupart des éléments<abbr>HTML</abbr> existent pour une raison. Ils ont été créés et approuvés afin de rendre compte de situations spécifiques que des auteurs comme vous et moi sommes susceptibles de rencontrer.
+</p>
 
-<p>There are obviously special elements, like the <code class="markup element">A</code> element, that come bundled with superpowers. In the case of the <code class="markup element">A</code> element, its superpower lies in the <code class="markup attribute">HREF</code> attribute that allows us to link out to any other resource on the web. Other elements like <code class="markup element">INPUT</code>, <code class="markup element">SELECT</code>, <code class="markup element">TEXTAREA</code>, and <code class="markup element">BUTTON</code> have their own superpowers, allowing people to enter data and submit it to a web server.</p>
+<p>Il y a évidemment des éléments spéciaux, comme l'élément <code class="markup element">A</code>, qui sont fournis avec des super pouvoirs. Dans le cas de l'élément <code class="markup element">A</code>, sa superpuissance réside dans l'attribut<code class="markup attribute">HREF</code> attribute that allows us to link out to any other resource on the web. Other elements like <code class="markup element">INPUT</code>, <code class="markup element">SELECT</code>, <code class="markup element">TEXTAREA</code>, and <code class="markup element">BUTTON</code> have their own superpowers, allowing people to enter data and submit it to a web server.</p>
 
 <p>Then there are elements that describe the kind of content they contain. The contents of a <code class="markup element">P</code> element should be considered a paragraph of text. The contents of an <code class="markup element">LI</code> element should be considered as an item in a list. Browsers display the contents of these elements with some visual hints as to their meaning. Paragraphs are displayed with whitespace before and after their content. List items are displayed with bullet points or numbers before their content.</p>
 
