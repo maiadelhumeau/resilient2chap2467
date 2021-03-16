@@ -36,9 +36,9 @@
 
 <main>
 
-<h1><span>Chapter 4:</span> Languages</h1>
+<h1><span>Chapitre 4:</span> Langages</h1>
 
-<p><span id="Jon%20Postel">Jon Postel</span> was one of the engineers working on the <abbr>ARPANET</abbr>, the precursor to the internet. He wanted to make sure that the packets—or “datagrams”—being shuttled around the network were delivered in the most efficient way. He came to realise that a lax approach to errors was crucial to effective packet switching.</p>
+<p><span id="Jon%20Postel">Jon Postel</span> était l’un des ingénieurs qui travaillait sur <abbr>l’ARPANET</abbr>, le précurseur d’Internet. Il voulait s’assurer que les paquets - ou les “datagrammes” - qui étaient transportés à travers le réseau étaient livrés le plus efficacement possible. Il a réalisé qu’une approche  laxiste des erreurs était cruciale pour un remplacement de paquets efficace.</p>
 
 <figure>
 <picture>
@@ -47,27 +47,27 @@
 <img src="images/small/jon-postel.jpg" alt="Jon Postel standing by a hand‐drawn diagram of the early internet." srcset="images/medium/jon-postel.jpg 2x, images/large/jon-postel.jpg 3x" />
 </picture>
 <figcaption>Jon Postel.
-<small>Photograph by Irene Fertik, <abbr>USC</abbr> News Service.</small>
-<small>Copyright 1994, <abbr>USC</abbr>.</small></figcaption>
+<small>Photographié par Irene Fertik, USC<abbr>USC</abbr> Service d’information.</small>
+<small>Droits d’auteur 1994,<abbr>USC</abbr>.</small></figcaption>
 </figure>
 
-<p>If a node on the network receives a datagram that has errors, but is still understandable, then the packet should be processed anyway. Conversely every node on the network should attempt to send well‐formed packets. This line of thinking was enshrined in the Robustness Principle, also known as Postel’s Law:</p>
+<p>Si sur le réseau, un nœud reçoit un datagramme qui a des erreurs, mais qui est toujours compréhensible, alors le paquet devrait quand même fonctionner. Inversement, chaque nœud sur le réseau devrait essayer d’envoyer des paquets bien constitués. Cette ligne de pensée a été consacrée au Principe de Robustess aussi connu comme la loi de Postel :</p>
 
 <blockquote>
-<p>Be conservative in what you send; be liberal in what you accept.</p>
+<p>Soit conservateur dans ce que tu envoies, soit libéral dans ce que tu acceptes.</p>
 </blockquote>
 
-<p>If that sounds familiar, it’s because that’s the way that web browsers deal with <abbr>HTML</abbr> and <abbr>CSS</abbr>. Even if there are errors in the <abbr>HTML</abbr> or <abbr>CSS</abbr>, the browser will still attempt to process the information, skipping over any pieces that it can’t parse.</p>
+<p>Si cela semble familier, c’est parce que c’est de cette manière que les navigateurs traitent avec <abbr>HTML</abbr> et <abbr>CSS</abbr>. Même s' il y a des erreurs dans <abbr>l'HTML</abbr> ou <abbr>le CSS</abbr>, le navigateur essaiera quand même de transmettre l’information en sautant les parties qu’il n’arrive pas à analyser.</p>
 
 <section aria-labelledby="declaration">
 
-<h2 id="declaration">Declaration</h2>
+<h2 id="declaration">Déclaration</h2>
 
-<p><abbr>HTML</abbr> and <abbr>CSS</abbr> are both examples of declarative languages. An author writing in a declarative language describes a desired outcome without providing step‐by‐step instructions to the computer processing the file. With <abbr>HTML</abbr>, you can describe the nature of the content—paragraphs, headings, form fields, etc.—without having to explain exactly what the browser should do with that information. With <abbr>CSS</abbr>, you can describe the desired appearance of the content—colours, borders, etc.—without having to write a program to apply those styles.</p>
+<p><abbr>HTML</abbr> et <abbr>CSS</abbr> sont tous les deux des exemples de langages déclaratifs. Un auteur écrivant dans un langage déclaratif décrit un résultat souhaité sans fournir des instructions étapes par étapes à l’ordinateur qui traite le fichier. Avec<abbr>HTML</abbr>, vous pouvez décrire la nature du contenu - paragraphes, rubriques, champs de formulaires, etc.—sans avoir à expliquer exactement ce que le navigateur doit faire avec ces informations. Avec le<abbr>CSS</abbr>, vous pouvez décrire l’apparence souhaitée du contenu - couleur, bordures, etc. - sans avoir à écrire un programme pour appliquer ces styles.</p>
 
-<p>Most programming languages are not declarative, they are imperative. Perl, Java, C++ …these are all examples of imperative languages. If you’re writing in one of those languages, you must provide precise instructions to the computer interpreting your code.</p>
+<p>La plupart des langages de programmation ne sont pas déclaratifs, ils sont impératifs. Perl, Java, C++ … voilà des exemples de langages impératifs. Si vous écrivez avec un de ces langages, vous devez donner des instructions précises pour que l’ordinateur comprenne le code.</p>
 
-<p>Imperative languages provide you with more power and precision than declarative languages. That comes at a price. Imperative languages tend to be harder to learn than declarative languages. It’s also harder to apply Postel’s Law to imperative languages. If you make a single mistake—one misplaced comma or semi‐colon—the entire program may fail. A misspelt tag in <abbr>HTML</abbr> or a missing curly brace in <abbr>CSS</abbr> can also cause headaches, but imperative programs must be well‐formed or they won’t run at all.</p>
+<p>Les langues impératives vous offrent plus de puissance et de précision que les langues déclaratives. Cela a un prix.  Les langues impératives ont tendance à être plus difficiles à apprendre que les langues déclaratives. Il est également plus difficile d'appliquer la loi de Postel aux langues impératives. Si vous faites une seule erreur - une virgule ou un point-virgule mal placé - le programme entier peut échouer. A misspelt tag in <abbr>HTML</abbr> or a missing curly brace in <abbr>CSS</abbr> can also cause headaches, but imperative programs must be well‐formed or they won’t run at all.</p>
 
 <p>Imperative languages such as <abbr>PHP</abbr>, Ruby, and Python can be found on the servers powering the World Wide Web, reading and writing database records, processing input, and running complex algorithms. You can choose just about any programming language you want when writing server‐side code. Unlike the unknowability of the end user’s web browser, you have control over your server’s capabilities.</p>
 
