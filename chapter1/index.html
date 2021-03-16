@@ -122,22 +122,21 @@ Parfois il aboutit à un cul-de-sac.  Mais l’on persévère. Petit à petit, n
 <p>L'architecture ouverte d’Internet reflète la vision libérale de ces créateurs. Tout en etant decentralisé internet a été conceptualisé volontairement pour etre un reseau idiot. C’est sa sauce secrète. Le protocole qui structure la transmission des données sur internet <abbr>-TCP/IP-</abbr> décrit comment les paquets de données devraient être déplacés, mais ce protocole ne se soucie pas du contenu de ces derniers. Cela permet à Internet d'être un mécanisme de transport de pleins de sortes d'applications : les emails, Telnet, le protocole <abbr>FTP</abbr> ou encore le World Wide Web.</p>
 
 </section>
- VVAZF
+
 <section aria-labelledby="hyperspace">
 
 <h2 id="hyperspace">L’hyperespace</h2>
 
-<p>Le web utilise <abbr id="HTTP">HTTP</abbr>, le protocole de transfert HyperText, pour envoyer et recevoir des données. Ces données sont identifiées de manière unique par une <abbr>URL</abbr>. Beaucoup de ces <abbr>URL</abbr> identifient des pages en <abbr id="HTML">HTML</abbr>, le langage de balisage HyperText. La fonctionnalité qui tue le Web réside ici dans l’humble élément <code class="markup element">A</code> de <abbr>HTML</abbr>. Le A signifie Ancre. Son attribut <abbr>HREF</abbr> vous permet de passer d’une URL à une autre URL, créant un lien qui peut être parcouru d’une page à l’autre. Ces liens transforment le Web d’un simple système de stockage et de récupération en un système hypertexte.</p>
+<p>Le web utilise <abbr id="HTTP">HTTP</abbr>, le protocole de transfert HyperText, pour envoyer et recevoir des données. Ces données sont identifiées de manière unique par une <abbr>URL</abbr>. Beaucoup de ces <abbr>URL</abbr> identifient des pages en <abbr id="HTML">HTML</abbr>, le langage de balisage HyperText. La fonctionnalité qui tue le Web réside ici dans l’humble élément <code class="markup element">A</code> de <abbr>HTML</abbr>. Le A signifie Ancre. Son attribut <code class="markup element">HREF</code> vous permet de passer d’une <abbr>URL</abbr> à une autre <abbr>URL</abbr>, créant un lien qui peut être parcouru d’une page à l’autre. Ces liens transforment le Web d’un simple système de stockage et de récupération en un système hypertexte.</p>
 
-<p>The web uses <abbr id="HTTP">HTTP</abbr>, the HyperText Transfer Protocol, to send and receive data. This data is uniquely identified with a <abbr>URL</abbr>. Many of these <abbr>URL</abbr>s identify pages made of <abbr id="HTML">HTML</abbr>, the HyperText Markup Language. The killer feature of the web lies here in <abbr>HTML</abbr>’s humble <code class="markup element">A</code> element. The A stands for Anchor. Its <code class="markup attribute">HREF</code> attribute allows you to cast off from within one <abbr>URL</abbr> out to another <abbr>URL</abbr>, creating a link that can be traversed from one page to the other. These links turn the web from being a straightforward storage and retrieval system into a hypertext system.</p>
+<p>Tim Berners-Lee n’a pas inventé l’hypertexte. Ce terme a été inventé par <span id="Ted%20Nelson">Ted Nelson</span>, un informaticien visionnaire qui travaillait sur son propre système hypertexte appelé Xanadu. Ted Nelson et Tim Berners-Lee ont tous deux été influencés par les idées exposées par <span id="Vannevar%20Bush">Vannevar Bush</span> dans son essai fondateur de 1945, <cite id="As%20We%20May%20Think">As We May Think</cite>. Bush, sans aucun doute, a été à son tour influencé par les idées de l’informaticien belge <span id="Paul%20Otlet">Paul Otlet</span>. Chacun de ces géants de l’histoire de l’hypertexte se tenait sur les épaules des géants qui les avaient précédés. Des géants tout en bas.</p>
 
-<p>Tim Berners‐Lee did not invent hypertext. That term was coined by <span id="Ted%20Nelson">Ted Nelson</span>, a visionary computer scientist who was working on his own hypertext system called Xanadu. Both Ted Nelson and Tim Berners‐Lee were influenced by the ideas set out by <span id="Vannevar%20Bush">Vannevar Bush</span> in his seminal 1945 essay, <cite id="As%20We%20May%20Think">As We May Think</cite>. Bush, no doubt, was in turn influenced by the ideas of Belgian informatician <span id="Paul%20Otlet">Paul Otlet</span>. Each one of these giants in the history of hypertext was standing on the shoulders of the giants that had come before them. Giants all the way down.</p>
+<p>Par rapport aux grandes visions précédentes de l’hypertexte, les liens sur le Web sont presque ridiculement simplistes. Il n’y a pas de lien bidirectionnel. Si vous créez un lien vers une autre <abbr>URL</abbr>, mais que la page de cette <abbr>URL</abbr> est déplacée ou détruite, vous n’avez aucun moyen de le savoir. 
+</p>
 
-<p>Compared to previous grand visions of hypertext, links on the web are almost laughably simplistic. There is no two‐way linking. If you link to another <abbr>URL</abbr>, but the page at that <abbr>URL</abbr> is moved or destroyed, you have no way of knowing.</p>
+<p>Mais la simplicité du web s’est avérée être le secret de son succès.</p>
 
-<p>But the simplicity of the web turned out to be the secret of its success.</p>
-
-<p>Tim Berners‐Lee assumed that most <abbr>URL</abbr>s would point to non‐<abbr>HTML</abbr> resources; word‐processing documents, spreadsheets, and all sorts of other computer files. <abbr>HTML</abbr> could then be used to create simple index pages that point to these files using links. Because <abbr>HTML</abbr> didn’t need to do very much, it had a limited vocabulary. That made it relatively easy to learn. To Tim Berners‐Lee’s surprise, people began to create fully‐fledged documents in <abbr>HTML</abbr>. Instead of creating content in other file formats and using <abbr>HTML</abbr> to link them up, people began writing content directly in <abbr>HTML</abbr>.</p>
+<p>Tim Berners-Lee a supposé que la plupart des <abbr>URL</abbr> pointaient vers des ressources non <abbr>HTML</abbr>; documents de traitement de texte, feuilles de calcul et toutes sortes d’autres fichiers informatiques. <abbr>HTML</abbr> pourrait ensuite être utilisé pour créer de simples pages d’index qui pointent vers ces fichiers à l’aide de liens. Comme le <abbr>HTML</abbr> n’avait pas besoin de faire grand chose, son vocabulaire était limité. Cela a rendu l’apprentissage relativement facile. À la surprise de Tim Berners-Lee, les gens ont commencé à créer des documents à part entière en <abbr>HTML</abbr>. Au lieu de créer du contenu dans d’autres formats de fichiers et d’utiliser du HTML pour lier, les gens ont commencé à écrire du contenu directement en <abbr>HTML</abbr>..</p>
 
 </section>
 
@@ -145,11 +144,11 @@ Parfois il aboutit à un cul-de-sac.  Mais l’on persévère. Petit à petit, n
 
 <h2 id="markmeupmarkmedown">Mark me up, mark me down</h2>
 
-<p><abbr>HTML</abbr> wasn’t the first markup language to be used at <abbr>CERN</abbr>. Scientists there were already sharing documents written in a flavour of <abbr id="SGML">SGML</abbr>—Standard Generalized Markup Language. Tim Berners‐Lee took this existing vocabulary from <abbr>CERN</abbr> <abbr>SGML</abbr> and used it as a starting point for his new markup language. Once again, it made sense to build on what people were already familiar with rather than creating something from scratch.</p>
+<p>Le <abbr>HTML</abbr> n'était pas le premier langage de balisage utilisé par le <abbr>CERN</abbr>. Les scientifiques partageaient déjà des documents écrits en <abbr id="SGML">SGML</abbr> - Standard Generalized Markup Language. Tim Berners-Lee a pris ce vocabulaire existant du <abbr>CERN</abbr> <abbr>SGML</abbr> et l’a utilisé comme point de départ pour son nouveau langage de balisage. Une fois encore, ça a du sens de créer à partir de quelque chose dont les personnes sont déjà familières plutôt que de créer quelque chose de nouveau à partir de rien.</p>
 
-<p>The first version of <abbr>HTML</abbr> contained a grand total of 21 elements. Many of those elements are still with us today—<code class="markup element">TITLE</code>, <code class="markup element">P</code>, <code class="markup element">UL</code>, <code class="markup element">LI</code>, <code class="markup element">H1</code>, <code class="markup element">H2</code>, etc., and of course, the <code class="markup element">A</code> element. Others have fallen by the wayside—<code class="markup element">ISINDEX</code>, <code class="markup element">PLAINTEXT</code>, <code class="markup element">LISTING</code>, <code class="markup element">HP1</code>, <code class="markup element">HP2</code>, etc., as well as a proprietary element called <code class="markup element">NEXTID</code> that only made sense if you were using a computer running the NeXTSTEP operating system. That’s the <abbr>OS</abbr> that Tim Berners‐Lee was using when he created <abbr>HTTP</abbr>, <abbr>HTML</abbr>, and the world’s first web browser, called confusingly WorldWideWeb, which only worked on NeXT machines.</p>
+<p> La première version du <abbr>HTML</abbr> contenait au total 21 éléments. Beaucoup d’entre eux sont encore utilisés aujourd’hui - <code class="markup element">TITLE</code>, <code class="markup element">P</code>, <code class="markup element">UL</code>, <code class="markup element">LI</code>, <code class="markup element">H1</code>, <code class="markup element">H2</code>, etc., et bien sûr l'élément <code class="markup element">A</code>. Les autres non pas survécu à la transition -<code class="markup element">ISINDEX</code>, <code class="markup element">PLAINTEXT</code>, <code class="markup element">LISTING</code>, <code class="markup element">HP1</code>, <code class="markup element">HP2</code>, etc., tout comme la propriété element nommée NEXTID qui ne fait du sens que si vous utilisez un ordinateur avec le système d’exploitation NeXTSTEP. C’est le <abbr>système d’exploitation</abbr> que Tim Berners-Lee utilisait quand il créa <abbr>HTTP</abbr>, <abbr>HTML</abbr> et le premier navigateur internet nommé WorldWideWeb, qui ne fonctionnait seulement que sur les machines NeXT.</p>
 
-<p>To demonstrate the power and interoperability of the web, a cross‐platform browser was needed; one that anybody could install and use, no matter what operating system they were using. The task of building that browser fell to an undergraduate at <abbr>CERN</abbr> named <span id="Nicola%20Pellow">Nicola Pellow</span>. She created the <span id="Line%20Mode%20Browser">Line Mode Browser</span>. It was simple but powerful. It didn’t have the same level of interactivity as the WorldWideWeb browser, but the fact that it could be run on any machine meant that the web was now accessible to everyone.</p>
+<p>Pour démontrer la puissance et interopérabilité du web, il fallait un navigateur multi-plateforme, un qui pouvait être installé peut importe le système d’exploitation. Cette tâche de créer le navigateur a été assignée à un étudiant au <abbr>CERN</abbr> nommé <span id="Nicola%20Pellow">Nicola Pellow</span>. Elle créa le <span id="Line%20Mode%20Browser">Line Mode Browser</span>. Il était simple mais puissant. Il n’avait pas le même niveau d’interaction que le navigateur WorldWideWeb mais dans les faits il pouvait être utilisé sur n’importe quelle machine, le web était alors accessible à tous.</p>
 
 <figure>
 <picture>
@@ -157,18 +156,18 @@ Parfois il aboutit à un cul-de-sac.  Mais l’on persévère. Petit à petit, n
 <source media="all and (min-width: 50em)" srcset="images/medium/line-mode-browser.jpg, images/large/line-mode-browser.jpg 1.5x" />
 <img src="images/small/line-mode-browser.jpg" alt="Close up of a screen of green text on a black background." srcset="images/medium/line-mode-browser.jpg 2x, images/large/line-mode-browser.jpg 3x" />
 </picture>
-<figcaption>The Line Mode Browser in action.</figcaption>
+<figcaption>le navigateur Line Mode en action.</figcaption>
 </figure>
 
-<p>As soon as there were two web browsers in the world, interoperability and backwards compatibility became important issues. For instance, what should the Line Mode Browser do when it encounters an <abbr>HTML</abbr> element it doesn’t understand, such as <code class="markup element">NEXTID</code>?</p>
+<p>A partir du moment où il y avait deux navigateurs web dans le monde , l'interopérabilité et la compatibilité descendante sont devenu des problèmes importants. Par exemple que devrait faire le navigateur Line Mode si il rencontre un élément <abbr>HTML</abbr> qu’il ne comprend pas tel que <code class="markup element">NEXTID</code> ?</p>
 
-<p>The answer can be found in the sparse documentation that Tim Berners‐Lee wrote for his initial collection called <cite><abbr>HTML</abbr> Tags</cite>. Under the heading “Next <abbr>ID</abbr>” he wrote:</p>
+<p>La réponse peut être trouvée dans la documentation qu’a écrit Tim Berners-Lee dans sa première collection nommée <cite><abbr>HTML</abbr> Tags</cite>. En dessous de l'entête “Next <abbr>ID</abbr>” il écrit :</p>
 
 <blockquote>
 <p>Browser software may ignore this tag.</p>
 </blockquote>
 
-<p>This seemingly innocuous decision would have far‐reaching consequences for the future of the World Wide Web.</p>
+<p>Cette innocente décision a eu de grandes conséquences pour le futur du World Wide Web.</p>
 
 <figure>
 <picture>
@@ -178,7 +177,7 @@ Parfois il aboutit à un cul-de-sac.  Mais l’on persévère. Petit à petit, n
 </picture>
 <figcaption>Sir Tim Berners‐Lee.
 <small>Photograph by Paul Clark.</small>
-<small>Licensed under a Creative Commons Attribution‐ShareAlike 4.0 International license.</small></figcaption>
+<small>Sir Tim Berners-Lee photographié par Paul Clark. Sous license Creative Commons Attribution-ShareAlike 4.0 International.</small></figcaption>
 </figure>
 
 </section>
