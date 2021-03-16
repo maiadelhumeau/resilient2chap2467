@@ -204,39 +204,50 @@ Impardonnable
 <p>Cela met en évidence une autre différence entre <abbr>HTML</abbr> et JavaScript. Alors que le <abbr>HTML</abbr> peut être rendu morceau par morceau au fur et à mesure de son téléchargement, un fichier JavaScript doit être téléchargé dans son intégralité avant que son contenu puisse être analysé. Bien qu'il soit tentant de penser que seule une petite minorité de visiteurs n'aura pas accès au JavaScript d'un site, la vérité est que tout le monde est un utilisateur non-JavaScript jusqu'à ce que le JavaScript ait fini de se charger ...<em>si</em> le JavaScript finit de se charger. Des connexions défaillantes, des opérateurs de réseau interférents et des logiciels de blocage des publicités imprévisibles peuvent torpiller l'hypothèse selon laquelle le JavaScript sera toujours disponible.
 </p>
 
-<p>Le problème n'est pas que les gens désactivent délibérément le JavaScript dans leur navigateur. Bien que ce soit un cas d'utilisation qui mérite d'être pris en considération, ce n'est pas la cause la plus fréquente des erreurs de JavaScript. <span id="Stuart%20Langridge">Stuart Langridge</span> put together a list of all the potential points of failure under the title <cite id="Everyone%20has%20JavaScript,%20right?">Everyone has JavaScript, right?</cite></p>
+<p>Le problème n'est pas que les gens désactivent délibérément le JavaScript dans leur navigateur. Bien que ce soit un cas d'utilisation qui mérite d'être pris en considération, ce n'est pas la cause la plus fréquente des erreurs de JavaScript. <span id="Stuart%20Langridge">Stuart Langridge</span> a dressé une liste de tous les points d'échec potentiels sous le titre <cite id="Everyone%20has%20JavaScript,%20right?">“Tout le monde a JavaScript, n'est-ce pas ?”</cite></p>
 
 <blockquote>
-<p>The user requests your web app. Has the page loaded yet? Did the <abbr>HTTP</abbr> request for the JavaScript succeed? Did the <abbr>HTTP</abbr> request for the JavaScript complete? Does the corporate firewall block JavaScript? Does their <abbr>ISP</abbr> or mobile operator interfere with downloaded JavaScript? Have they switched off JavaScript? Do they have add‐ons or plug‐ins installed which inject script or alter the <abbr>DOM</abbr> in ways you didn’t anticipate? Is the Content Delivery Network up? Does their browser support the JavaScript you’ve written?</p>
+<p>L'utilisateur demande votre application web. La page s'est-elle déjà chargée ? La requête  <abbr>HTTP</abbr>pour le JavaScript a-t-elle réussi ? La demande <abbr>HTTP</abbr> rpour le JavaScript a-t-elle abouti ? Le pare-feu de l'entreprise bloque-t-il le JavaScript ? Leur <abbr>ISP</abbr> ou leur opérateur mobile interfère-t-il avec le JavaScript téléchargé ? Ont-ils désactivé JavaScript ? Ont-ils installé des add-ons ou des plug-ins qui injectent du script ou modifient le  <abbr>DOM</abbr>d'une manière que vous n'aviez pas prévue ? Le réseau de diffusion de contenu est-il opérationnel ? Leur navigateur prend-il en charge le JavaScript que vous avez écrit ?
+</p>
 </blockquote>
 
-<p>Many of those problems would also affect <abbr>HTML</abbr> and <abbr>CSS</abbr> files, but because of Postel’s Law, they can recover gracefully.</p>
+<p>Nombre de ces problèmes affecteraient également les fichiers <abbr>HTML</abbr> et <abbr>CSS</abbr>, mais grâce à la loi de Postel, ils peuvent se rétablir.</p>
 
-<p>This doesn’t mean that web designers shouldn’t use JavaScript. But it does mean that web designers shouldn’t <em>rely</em> on JavaScript when a simpler solution exists.</p>
+<p>Cela ne signifie pas que les concepteurs de sites web ne doivent pas utiliser JavaScript. Mais cela signifie que les concepteurs de sites web ne devraient pas se <em>fier</em> à JavaScript lorsqu'une solution plus simple existe.</p>
 
 </section>
 
 <section aria-labelledby="platform">
 
-<h2 id="platform">Platform</h2>
+<h2 id="platform">
+Plateforme
+</h2>
 
-<p>Web designers who ignored the message of John Allsopp’s <cite>A Dao of Web Design</cite> made the mistake of treating the web like print. The history of print has much to offer—hierarchy, typography, colour theory—but the web is a fundamentally different medium. The history of software development also has much to offer—architecture, testing, process—but again, the web remains its own medium.</p>
+<p>Les concepteurs de sites web qui ont ignoré le message de <cite>A Dao of Web Design</cite> de John Allsopp ont commis l'erreur de traiter le web comme un imprimé. L'histoire de l'imprimé a beaucoup à offrir - hiérarchie, typographie, théorie des couleurs - mais le web est un média fondamentalement différent. L'histoire du développement de logiciels a également beaucoup à offrir - architecture, tests, processus - mais là encore, le web reste son propre support.
 
-<p>It’s tempting to apply the knowledge and learnings from another medium to the web. But it is more structurally honest to uncover the web’s own unique strengths and weaknesses.</p>
+</p>
 
-<p>The language we use can subtly influence our thinking. In his book <cite id="Metaphors%20We%20Live%20By">Metaphors We Live By</cite>, <span id="George%20Lakoff">George Lakoff</span> highlights the dangers of political language. Obvious examples are “friendly fire” and “collateral damage”, but a more insidious example is “tax relief”—before a debate has even begun, taxation has been framed as something requiring relief.</p>
+<p>Il est tentant d'appliquer au web les connaissances et les enseignements d'un autre média. Mais il est structurellement plus honnête de découvrir les forces et faiblesses propres au web.</p>
 
-<p>On the face of it, the term “web platform” seems harmless. Describing the web as a platform puts it on par with other software environments. Flash was a platform. Android is a platform. i<abbr>OS</abbr> is a platform. But the web is not a platform. The whole point of the web is that it is <em>cross</em>‐platform.</p>
+<p>Le langage que nous utilisons peut subtilement influencer notre réflexion. Dans son livre <cite id="Metaphors%20We%20Live%20By">Metaphors We Live By</cite>, <span id="George%20Lakoff">George Lakoff</span> souligne les dangers du langage politique. Les exemples évidents sont le "tir sur un ami" et les "dommages collatéraux", mais un exemple plus insidieux est celui des "allégements fiscaux" - avant même qu'un débat n'ait commencé, la fiscalité a été présentée comme quelque chose qui nécessite un allégement.</p>
 
-<p>A platform provides a controlled runtime environment for software. As long as the user has that runtime environment, you can be confident that they will get exactly what you’ve designed. If you build an i<abbr>OS</abbr> app and someone has an i<abbr>OS</abbr> device, you know that they will get 100% of your software. But if you build an i<abbr>OS</abbr> app and someone has an Android device, they will get 0% of your software. You can’t install an i<abbr>OS</abbr> app on an Android device. It’s all or nothing.</p>
+<p>À première vue, le terme "plate-forme web" semble inoffensif. Décrire le web comme une plate-forme le met au même niveau que d'autres environnements logiciels. Flash était une plate-forme. Android est une plateforme< i<abbr>OS.</abbr> est une platforme. Mais le web n'est pas une plateforme. L'intérêt du web est qu'il est <em>multi</em>‐platforme.</p>
 
-<p>The web isn’t as binary as that. If you build something using web technologies, and someone visits with a web browser, you can’t be sure how many of the web technologies will be supported. It probably won’t be 100%. But it’s also unlikely to be 0%. Some people will visit with i<abbr>OS</abbr> devices. Others will visit with Android devices. Some people will get 80% or 90% of what you’ve designed. Others will get just 20%, 30%, or 50%. The web isn’t a platform. It’s a continuum.</p>
+<p>A Une plate-forme fournit un environnement d'exécution contrôlé pour les logiciels. Tant que l'utilisateur dispose de cet environnement d'exécution, vous pouvez être sûr qu'il obtiendra exactement ce que vous avez conçu. Si vous créez une application i<abbr>OS</abbr> et que quelqu'un possède un appareil sous i<abbr>OS</abbr> vous savez qu'il obtiendra 100% de votre logiciel. Mais si vous créez une application i<abbr>OS</abbr>  et que quelqu'un possède un appareil Android, il obtiendra 0 % de vos logiciels. Vous ne pouvez pas installer une application i<abbr>OS</abbr> sur un appareil Android. C'est tout ou rien.
 
-<p>Thinking of the web as a platform is a category error. A platform like Flash, i<abbr>OS</abbr>, or Android provides stability and certainty, but only under a very specific set of circumstances—your software must be accessed with the right platform‐specific runtime environment. The web provides no such certainty, but it also doesn’t restrict the possible runtime environments.</p>
+</p>
 
-<p>Platforms are controlled and predictable. The World Wide Web is chaotic and unpredictable.</p>
+<p>
+Le web n'est pas aussi binaire que cela. Si vous construisez quelque chose en utilisant les technologies web, et que quelqu'un vous visite avec un navigateur web, vous ne pouvez pas être sûr du nombre de technologies web qui seront supportées. Mais ça ne sera probablement pas 100%. Mais il est également peu probable que ce soit 0 %. Certaines personnes visiteront avec des appareils
+ i<abbr>OS</abbr>. D'autres utiliseront des appareils Android. Certaines personnes obtiendront 80% ou 90 % de ce que vous avez conçu. D'autres n'obtiendront que 20 %, 30 % ou 50 %. Le web n'est pas une plateforme. C'est un “continuum”.
 
-<p>The web is a hot mess.</p>
+<p>Penser le web comme une plateforme est une erreur de catégorie. Une plateforme comme Flash, i<abbr>OS</abbr>,ou Android offre stabilité et certitude, mais uniquement dans des circonstances très spécifiques : votre logiciel doit être accessible avec un environnement d'exécution adapté à la plateforme. Le web ne fournit pas cette certitude, mais il ne restreint pas non plus les environnements d'exécution possibles.
+
+<p>Les plates-formes sont contrôlées et prévisibles. Le World Wide Web est chaotique et imprévisible.</p>
+
+<p>
+Le web est un véritable gâchis.
+</p>
 
 </section>
 
