@@ -36,7 +36,7 @@
 
 <main>
 
-<h1><span>Chapter 2:</span> Materials</h1>
+<h1><span>Chapter 2:</span> Matériels</h1>
 
 <p>Au risque d'apprendre aux vieux singes à faire la grimace, j'aimerais que vous réfléchissiez à ce qui se passe lorsqu'un navigateur analyse un élément<abbr>HTML</abbr>. Prenez, par exemple, un élément de paragraphe contenant du texte. Il y a une balise <code class="markup element">P</code> d'ouverture, une balise <code class="markup element">P</code> de fermeture, et entre ces balises, il y a le texte.
 .</p>
@@ -71,67 +71,68 @@
 <p>Ensuite, il y a des éléments qui décrivent le type de contenu qu'ils contiennent. Le contenu d'un élément <code class="markup element">P</code> doit être considéré comme un paragraphe de texte. Le contenu d'un élément  <code class="markup element">LI</code> doit être considéré comme un élément d'une liste. Les navigateurs affichent le contenu de ces éléments avec quelques indices visuels quant à leur signification. Les paragraphes sont affichés avec des espaces avant et après leur contenu. Les éléments de la liste sont affichés avec des puces ou des numéros avant leur contenu.
 </p>
 
-<p>The early growth of <abbr>HTML</abbr>’s vocabulary was filled with new elements that provided visual instructions to web browsers: <code class="markup element">BIG</code>, <code class="markup element">SMALL</code>, <code class="markup element">CENTER</code>, <code class="markup element">FONT</code>. In fact, the visual instructions were the only reason for those elements to exist—they provided no hint as to the <em>meaning</em> of the content they contained. <abbr>HTML</abbr> was in danger of becoming a visual instruction language instead of a vocabulary of meaning.</p>
+<p>Le début de la croissance du vocabulaire <abbr>HTML</abbr> a été rempli de nouveaux éléments qui ont fourni des instructions visuelles aux navigateurs Web: <code class="markup element">BIG</code>, <code class="markup element">SMALL</code>, <code class="markup element">CENTER</code>, <code class="markup element">FONT</code>. En fait, les instructions visuelles étaient la seule raison pour laquelle ces éléments existent ne fournissent aucune indication sur la  <em>signification</em> du contenu qu'elles contenaient. Le <abbr>HTML</abbr> risquait de devenir un langage d'instruction visuelle au lieu d'un vocabulaire de sens.</p>
 
 </section>
 
 <section aria-labelledby="amatterofstyle">
 
-<h2 id="amatterofstyle">A matter of style</h2>
+<h2 id="amatterofstyle">Une question de style</h2>
 
-<p><span id="Håkon%20Wium%20Lie">Håkon Wium Lie</span> was working at <abbr>CERN</abbr> at the same time as Tim Berners‐Lee. He immediately recognised the potential of the World Wide Web and its language, <abbr>HTML</abbr>. He also realised that the expressive power of the language was in danger of being swamped by visual features. Lie proposed a new format to describe the presentation of <abbr>HTML</abbr> documents: Cascading Style Sheets.</p>
+<p><span id="Håkon%20Wium%20Lie">Håkon Wium Lie</span> travaillait au <abbr>CERN</abbr> en même temps que Tim Berners-Lee. Il a immédiatement reconnu le potentiel du World Wide Web et de son langage, <abbr>HTML</abbr>. Il s'est également rendu compte que le pouvoir expressif de la langue risquait d'être submergé par des traits visuels. Lee a proposé un nouveau format pour décrire la présentation des documents <abbr>HTML</abbr> documents: les feuilles de style en cascade.</p>
 
-<p>He was quickly joined by the Dutch programmer <span id="Bert%20Bos">Bert Bos</span>. Together they set about creating a syntax that would be powerful enough to handle the demands of designers, while remaining simple enough to learn quickly. They succeeded.</p>
+<p>Il est rapidement rejoint par le programmeur néerlandais <span id="Bert%20Bos">Bert Bos</span>. Ensemble, ils se sont mis à créer une syntaxe suffisamment puissante pour gérer les demandes des concepteurs, tout en restant suffisamment simple pour apprendre rapidement. Ils ont réussi.</p>
 
-<p>Think for a moment of all the sites out there on the web. There’s a huge variation in visual style: colour schemes, typographic treatments, textures and layouts. All of that variety is made possible by one simple pattern that describes all the <abbr id="CSS">CSS</abbr> ever written:</p>
+<p>Pensez un instant à tous les sites disponibles sur le Web. Il existe une énorme variation dans le style visuel: jeux de couleurs, traitements typographiques, textures et mises en page. Toute cette variété est rendue possible par un modèle simple qui décrit tout le <abbr id="CSS">CSS</abbr>jamais écrit:</p>
 
 <pre><code>selector {
     property: value;
 }</code></pre>
 
-<p>That’s it.</p>
+<p>C'est tout.</p>
 
-<p><abbr>CSS</abbr> shares <abbr>HTML</abbr>’s forgiving attitude to errors. If a web browser encounters a selector it doesn’t understand, it simply skips over whatever is between that selector’s curly braces. If a browser sees a property or a value it doesn’t understand, it just ignores that particular declaration. The browser does not throw an error. The browser does not stop parsing the <abbr>CSS</abbr> at this point, refusing to go any further.</p>
+<p><abbr>CSS</abbr> a partagé l'attitude indulgente du <abbr>HTML</abbr> face aux erreurs. Si un navigateur Web rencontre un sélecteur qu'il ne comprend pas, il ignore simplement tout ce qui se trouve entre les accolades de ce sélecteur. Si un navigateur voit une propriété ou une valeur qu'il ne comprend pas, il ignore simplement cette déclaration particulière. Le navigateur ne renvoie pas d'erreur. Le navigateur n'arrête pas d'analyser le <abbr>CSS</abbr> à ce stade, refusant d'aller plus loin.</p>
 
 <pre><code>marklar {
     marklar: marklar;
 }</code></pre>
 
-<p>Just as with <abbr>HTML</abbr>, this loose error‐handling has allowed <abbr>CSS</abbr> to grow over time. New selectors, new properties, and new values have been added to the language’s vocabulary over the years. Whenever a new feature lands in <abbr>CSS</abbr>, designers and developers know that they can safely use it, even if it isn’t yet widely supported in browsers. They can rest assured that old browsers will react to new features with complete indifference.</p>
+<p>Tout comme avec <abbr>HTML</abbr>,  cette gestion des erreurs lâche a permis au <abbr>CSS</abbr> de se développer au fil du temps. De nouveaux sélecteurs, de nouvelles propriétés et de nouvelles valeurs ont été ajoutés au vocabulaire de la langue au fil des ans. Chaque fois qu'une nouvelle fonctionnalité arrive dans <abbr>CSS</abbr>, les concepteurs et les développeurs savent qu'ils peuvent l'utiliser en toute sécurité, même si elle n'est pas encore largement prise en charge dans les navigateurs. Ils peuvent être assurés que les anciens navigateurs réagiront aux nouvelles fonctionnalités avec une indifférence totale.</p>
 
-<p>Just because a language is elegant and well‐designed doesn’t mean that people will use it. <abbr>CSS</abbr> arrived later than <abbr>HTML</abbr>. Designers didn’t spend the intervening years waiting patiently for a way to style their documents on the web. They used what was available to them.</p>
+<p>Ce n'est pas parce qu'une langue est élégante et bien conçue que les gens l'utiliseront. Le <abbr>CSS</abbr> est arrivé plus tard que le <abbr>HTML</abbr>. Les concepteurs n'ont pas passé les années qui ont suivi à attendre patiemment un moyen de styliser leurs documents sur le Web. Ils ont utilisé ce qui était à leur disposition.
+</p>
 
 </section>
 
 <section aria-labelledby="killingit">
 
-<h2 id="killingit">Killing it</h2>
+<h2 id="killingit">Déchire tout</h2>
 
-<p>In 1996 <span id="David%20Siegel">David Siegel</span> published a book entitled <cite id="Creating%20Killer%20Websites">Creating Killer Websites</cite>. In it, he outlined a series of ingenious techniques for wrangling eye‐catching designs out of the raw material of <abbr>HTML</abbr>.</p>
+<p>En 1996 <span id="David%20Siegel">David Siegel</span> a publié un livre intitulé <cite id="Creating%20Killer%20Websites">Creating Killer Websites</cite>. A l'intérieur, il y décrit une série de techniques ingénieuses pour éliminer des conceptions accrocheuses à partir de la matière première du <abbr>HTML</abbr>.</p>
 
-<p>One technique involved using a transparent <abbr>GIF</abbr>, just one pixel by one pixel in size. If this was inserted into a page as an <code class="markup element">IMG</code> element, but given precise values in its <code class="markup attribute">WIDTH</code> and <code class="markup attribute">HEIGHT</code> attributes, designers could control the amount of whitespace in their designs.</p>
+<p>Une technique impliquait l'utilisation d'un <abbr>GIF</abbr> transparent, juste un pixel par un pixel. Si cela était inséré dans une page en tant qu'élément <code class="markup element">IMG</code> mais avec des valeurs précises dans ses attributs <code class="markup attribute">WIDTH</code> et <code class="markup attribute">HEIGHT</code>, les concepteurs pouvaient contrôler la quantité d'espaces blancs dans leurs conceptions.</p>
 
-<p>Another technique used the <code class="markup element">TABLE</code> element. This element—along with its children <code class="markup element">TR</code> and <code class="markup element">TD</code>—was intended to describe tabular data. But with the right values applied to the widths and heights of table cells, it could be used to recreate just about any desired layout.</p>
+<p>Une autre technique a utilisé l'élément <code class="markup element">TABLE</code>. Cet élément - avec ses enfants <code class="markup element">TR</code> and <code class="markup element">TD</code>— était destiné à décrire des données tabulaires. Mais avec les bonnes valeurs appliquées aux largeurs et hauteurs des cellules de tableau, il pourrait être utilisé pour recréer à peu près n'importe quelle disposition souhaitée.</p>
 
-<p>These were hacks; clever solutions to tricky problems. But they had unfortunate consequences. Designers were treating <abbr>HTML</abbr> as a tool for the appearance of content instead of a language for describing the meaning of content. <abbr>CSS</abbr> was a solution to this problem, if only designers could be convinced to use it.</p>
+<p>C'étaient des hacks; des solutions intelligentes à des problèmes délicats. Mais ils ont eu des conséquences malheureuses. Les concepteurs traitaient le <abbr>HTML</abbr> comme un outil pour l'apparence du contenu au lieu d'un langage pour décrire la signification du contenu. <abbr>CSS</abbr> était une solution à ce problème, si seulement les concepteurs pouvaient être convaincus de l'utiliser.</p>
 
 </section>
 
 <section aria-labelledby="browserwars">
 
-<h2 id="browserwars">Browser wars</h2>
+<h2 id="browserwars">Guerres entre les navigateurs</h2>
 
-<p>One of the reasons why web designers weren’t using <abbr>CSS</abbr> was the lack of browser support. Back then there were two major browsers competing for the soul of the web: Microsoft Internet Explorer and Netscape Navigator. They were incompatible by design. One browser would invent a new <abbr>HTML</abbr> element or attribute. The other browser would invent their own separate element or attribute to do exactly the same thing.</p>
+<p>L'une des raisons pour lesquelles les concepteurs Web n'utilisaient pas <abbr>CSS</abbr> était le manque de prise en charge du navigateur. À l'époque, il y avait deux principaux navigateurs en compétition pour l'âme du Web : Microsoft Internet Explorer et Netscape Navigator. Ils étaient incompatibles par conception. Un navigateur inventerait un nouvel élément ou attribut <abbr>HTML</abbr>. L'autre navigateur inventerait son propre élément ou attribut différent mais pour faire exactement la même chose.</p>
 
-<p>Perhaps the thinking behind this strategy was that web designers would have to choose which proprietary features they were going to get behind, like children being forced to choose between parents. In reality web designers had little choice but to write for both browsers which meant doing twice the work.</p>
+<p>Peut-être que l'idée derrière cette stratégie était que les concepteurs de sites Web auraient à choisir les fonctionnalités propriétaires qu'ils allaient adopter, de la même manière qu’un enfant étant forcés de choisir entre ses parents. En réalité, les concepteurs Web n'avaient guère d'autre choix que d'écrire pour les deux navigateurs, ce qui signifiait faire deux fois plus de travail.</p>
 
-<p>A group of web designers decided enough was enough. They gathered together under the banner of the <span id="Web%20Standards%20Project">Web Standards Project</span> and began lobbying Microsoft and Netscape to abandon their proprietary ways and adopt standards such as <abbr>CSS</abbr>.</p>
+<p>Un groupe de concepteurs Web a décidé que cela suffisait. Ils se sont réunis sous la bannière du <span id="Web%20Standards%20Project">Web Standards Project</span> et ont commencé à faire pression sur Microsoft et Netscape pour qu'ils abandonnent leurs méthodes propriétaires et adoptent des normes telles que <abbr>CSS</abbr>.</p>
 
-<p>The tide began to turn with the launch of Internet Explorer 5 for the Mac, a browser that shipped with impressive <abbr>CSS</abbr> support. If this was the future of web design, life was about to get a lot more productive and creative.</p>
+<p>Le vent a commencé à tourner avec le lancement d'Internet Explorer 5 pour Mac, un navigateur livré avec un support <abbr>CSS</abbr> impressionnant. Si tel était l'avenir de la conception Web, la vie était sur le point de devenir beaucoup plus productive et créative.</p>
 
-<p>Some forward‐thinking web designers caught the <abbr>CSS</abbr> bug early. They redesigned their websites using <abbr>CSS</abbr> for layout instead of using <code class="markup element">TABLE</code>s and spacer <abbr>GIF</abbr>s. True to the founding spirit of the web, they shared what they were learning and encouraged others to make the switch to <abbr>CSS</abbr>.</p>
+<p>Certains concepteurs Web avant-gardistes ont détecté le bug <abbr>CSS</abbr> Ils ont repensé leurs sites Web en utilisant <abbr>CSS</abbr> pour la mise en page au lieu d'utiliser des <code class="markup element">TABLE</code>s et des <abbr>GIF</abbr>s d'espacement. Fidèles à l'esprit fondateur du Web, ils ont partagé ce qu'ils apprenaient et ont encouragé les autres à passer au <abbr>CSS</abbr>.</p>
 
-<p>Perhaps the best demonstration of the power of <abbr>CSS</abbr> was a website called the <span id="CSS%20Zen%20Garden">CSS Zen Garden</span>, created by <span id="Dave%20Shea">Dave Shea</span>. It was a showcase of beautiful and varied designs, all of them accomplished with <abbr>CSS</abbr>. Crucially, the <abbr>HTML</abbr> remained the same.</p>
+<p>La meilleure démonstration de la puissance du <abbr>CSS</abbr> était peut-être un site Web appelé <span id="CSS%20Zen%20Garden">CSS Zen Garden</span>, créé par <span id="Dave%20Shea">Dave Shea</span>. C'était une vitrine de designs magnifiques et variés, tous réalisés avec <abbr>CSS</abbr>. Fondamentalement, le <abbr>HTML</abbr> est resté le même.</p>
 
 <figure>
 <picture>
@@ -139,55 +140,56 @@
 <source media="all and (min-width: 50em)" srcset="images/medium/zengarden.png, images/large/zengarden.png 1.5x" />
 <img src="images/small/zengarden.png" alt="A montage of screenshots, all very different in appearance." srcset="images/medium/zengarden.png 2x, images/large/zengarden.png 3x" />
 </picture>
-<figcaption>A selection from the cornucopia of designs created for the CSS Zen Garden.</figcaption>
+<figcaption>Une séléction de la cornucopia of designs crée pour le CSS Zen Garden.</figcaption>
 </figure>
 
-<p>Seeing the same <abbr>HTML</abbr> document styled in a multitude of different ways drove home one of the beneficial effects of <abbr>CSS</abbr>: separation of concerns.</p>
+<p>Voir le même document <abbr>HTML</abbr> stylisé d'une multitude de manière différente a conduit à l'un des effets bénéfiques du  <abbr>CSS</abbr>: separation of concerns.</p>
 
 </section>
 
 <section aria-labelledby="coupling">
 
-<h2 id="coupling">Coupling</h2>
+<h2 id="coupling">Couplage</h2>
 
-<p>In any system, from urban infrastructure to a computer program, the designers of that system can choose the degree to which the pieces of the system depend on one another. In a tightly‐coupled system, every piece depends on every piece. In a loosely‐coupled system, all the pieces are independent, with little to no knowledge of the other pieces.</p>
+<p>Dans n'importe quel système, de l'infrastructure urbaine à un programme informatique, les concepteurs de ce système peuvent choisir dans quelle mesure les éléments du système dépendent les uns des autres. Dans un système très couplé, chaque pièce dépend de chaque pièce. Dans un système faiblement couplé, toutes les pièces sont indépendantes, avec peu ou pas de connaissance des autres pièces.</p>
 
-<p>In a tightly‐coupled system, each part of the system can make assumptions about the other parts. These systems can be designed quite quickly, but at a price. They lack resilience. If one piece fails, it could take the whole system with it.</p>
+<p>Dans un système très couplé, chaque partie du système peut faire des hypothèses sur les autres parties. Ces systèmes peuvent être conçus assez rapidement, mais à un certain prix. Il manque de résilience. Si une pièce échoue, elle pourrait faire échouer tout le système avec elle.</p>
 
-<p>Designing a loosely‐coupled system can take more work. The payoff is that the overall result is more resilient to failure. Individual parts of the system can be swapped out with a minimum of knock‐on effects.</p>
+<p>La conception d'un système faiblement couplé peut demander plus de travail. L’avantage est que le résultat global est plus résistant à l'échec. Les différentes parties du système peuvent être remplacées avec un minimum d'effets d'entraînement.</p>
 
-<p>The hacks pioneered by David Siegel tightly coupled structure and presentation into a single monolithic <abbr>HTML</abbr> file. The adoption of <abbr>CSS</abbr> eased this dependency, bringing the web closer to the modular approach of the <abbr>UNIX</abbr> philosophy. The presentational information could be moved into a separate file: a style sheet. That’s how a single <abbr>HTML</abbr> document at the CSS Zen Garden could have so many different designs applied to it.</p>
+<p>Les hacks mis au point par David Siegel ont étroitement couplé la structure et la présentation dans un seul fichier <abbr>HTML</abbr> monolithique. L'adoption de <abbr>CSS</abbr> a facilité cette dépendance, rapprochant le Web de l'approche modulaire de la philosophie <abbr>UNIX</abbr>. Les informations de présentation pourraient être déplacées dans un fichier séparé: une feuille de style. C'est ainsi qu'un seul document <abbr>HTML</abbr> du CSS Zen Garden pourrait avoir autant de conceptions différentes appliquées.
+</p>
 
-<p>The style sheet still needs to have some knowledge of the <abbr>HTML</abbr> document’s structure. Quite often, “hooks” are added into the markup to make it easier to style: specific values of <code class="markup attribute">CLASS</code> or <code class="markup attribute">ID</code> attributes, for example. So <abbr>HTML</abbr> and <abbr>CSS</abbr> aren’t completely decoupled. They form a partnership but they also have an arrangement. The markup document might decide that it wants to try seeing other style sheets sometimes. Meanwhile, the style sheet could potentially be applied to other documents. They are loosely coupled.</p>
+<p>La feuille de style doit encore avoir une certaine connaissance de la structure du document <abbr>HTML</abbr>. Très souvent, des «hooks» sont ajoutés dans le balisage pour faciliter le style: des valeurs  <code class="markup attribute">CLASS</code> ou des <code class="markup attribute">ID</code> attributs spécifiques. Ainsi <abbr>HTML</abbr> et <abbr>CSS</abbr> ne sont pas complètement découplés. Ils forment un partenariat mais ils ont aussi un arrangement. Le document de balisage peut décider qu'il souhaite parfois voir d'autres feuilles de style. Pendant ce temps, la feuille de style pourrait éventuellement être appliquée à d'autres documents. Ils sont faiblement couplés.</p>
 
 </section>
 
 <section aria-labelledby="dancingaboutarchitecture">
 
-<h2 id="dancingaboutarchitecture">Dancing about architecture</h2>
+<h2 id="dancingaboutarchitecture">Danser sur l'architecture</h2>
 
-<p>It takes time for a discipline to develop its own design values. Web design is a young discipline indeed. While we slowly begin to form our own set of guiding principles, we can look to other disciplines for inspiration.</p>
+<p>Il faut du temps à une discipline pour développer ses propres valeurs de conception. La conception Web est en effet une jeune discipline. Alors que nous commençons lentement à former notre propre ensemble de principes directeurs, nous pouvons nous tourner vers d'autres disciplines pour nous inspirer.</p>
 
-<p>The world of architecture has accrued its own set of design values over the years. One of those values is the principle of material honesty. One material should not be used as a substitute for another. Otherwise the end result is deceptive.</p>
+<p>Le monde de l'architecture a accumulé ses propres valeurs de conception au fil des ans. L'une de ces valeurs est le principe de l'honnêteté matérielle. Un matériau ne doit pas être utilisé comme un substitut à un autre. Sinon, le résultat final est trompeur.</p>
 
-<p>Using <code class="markup element">TABLE</code>s for layout is materially dishonest. The <code class="markup element">TABLE</code> element is intended for marking up the structure of tabular data. The end result of using <code class="markup element">TABLE</code>s, <code class="markup element">FONT</code> elements, and spacer <abbr>GIF</abbr>s is a façade. At first glance everything looks fine, but it won’t stand up to scrutiny. As soon as such a website is stress‐tested by actual usage across a range of browsers, the façade crumbles.</p>
+<p>L'utilisation de <code class="markup element">TABLE</code>s pour la mise en page est matériellement malhonnête. L'élément <code class="markup element">TABLE</code> est destiné à baliser la structure des données tabulaires. Le résultat final de l'utilisation des <code class="markup element">TABLE</code>s, des éléments <code class="markup element">FONT</code> et des <abbr>GIF</abbr>s d'espacement est une façade. À première vue, tout semble bien, mais il ne résiste pas à un examen minutieux. Dès qu'un tel site Web est testé en fonction de son utilisation réelle sur une gamme de navigateurs, la façade s'effrite.</p>
 
-<p>Using <abbr>CSS</abbr> for presentation is materially honest—that’s the intended use of <abbr>CSS</abbr>. It also allows <abbr>HTML</abbr> to be materially honest. Instead of trying to fulfil two roles—structure and presentation—<abbr>HTML</abbr> can return to fulfilling its true purpose, marking up the meaning of content.</p>
+<p>L’utilisation <abbr>CSS</abbr> pour la présentation est matériellement honnête - c’est l’utilisation prévue de  <abbr>CSS</abbr>. Cela permet également au <abbr>HTML</abbr> to be materially honest. d'être matériellement honnête. Au lieu d'essayer de remplir deux rôles - la structure et la présentation - le <abbr>HTML</abbr> peut revenir à remplir son véritable objectif, en balisant la signification du contenu.</p>
 
-<p>It’s still possible to use (or abuse) <abbr>CSS</abbr> to be materially dishonest. For the longest time, there was no easy way to add rounded corners to an element using <abbr>CSS</abbr>. Instead, web designers found ways to hack around the problem, putting background images on the element to simulate the same end effect. It worked up to a point, but just like the spacer <abbr>GIF</abbr> hack, it was a façade. Then the <code class="css property">border‐radius</code> property arrived. Now designers can have their rounded corners in a materially honest way.</p>
+<p>Il est toujours possible d'utiliser (ou d'abuser) du <abbr>CSS</abbr> pour être matériellement malhonnête. Pendant très longtemps, il n'y avait pas de moyen facile d'ajouter des coins arrondis à un élément en utilisant <abbr>CSS</abbr>. Au lieu de cela, les concepteurs Web ont trouvé des moyens de contourner le problème, en plaçant des images d'arrière-plan sur l'élément pour simuler le même effet final. Cela a fonctionné jusqu'à un certain point, mais tout comme le hack <abbr>GIF</abbr>spacer, c'était une façade. Puis la propriété <code class="css property">border‐radius</code> est arrivée. Désormais, les concepteurs peuvent avoir leurs coins arrondis d'une manière matériellement honnête.</p>
 
-<p>Crucially, designers were able to use new properties like <code class="css property">border‐radius</code> long before every web browser supported them. That’s all thanks to the liberal error‐handling model of <abbr>CSS</abbr>. Newer browsers would display the rounded corners. Older browsers would not throw an error. Older browsers would not stop parsing the <abbr>CSS</abbr> and refuse to parse any further. They would simply ignore the instructions they didn’t understand and move on. No harm, no foul.</p>
+<p>De manière cruciale, les concepteurs ont pu utiliser de nouvelles propriétés telles que le <code class="css property">border‐radius</code> bien avant que chaque navigateur Web ne les prenne en charge. Tout cela grâce au modèle libéral de gestion des erreurs de <abbr>CSS</abbr>. Les navigateurs plus récents afficheraient les coins arrondis. Les navigateurs plus anciens ne généreraient pas d'erreur. Les navigateurs plus anciens n'arrêteront pas d'analyser le <abbr>CSS</abbr> et refusent d'analyser davantage. Ils ignoreraient simplement les instructions qu'ils ne comprenaient pas et passeraient à autre chose. Pas de mal, pas de faute.</p>
 
-<p>Of course this means that the resulting website will look different in different browsers. Some people will see rounded corners. Others won’t.</p>
+<p>Bien sûr, cela signifie que le site Web résultant sera différent dans différents navigateurs. Certaines personnes verront des coins arrondis. D'autres non.</p>
 
-<p>And that’s okay.</p>
+<p>Et ça va.</p>
 
 </section>
 
 <aside>
-<h2>References</h2>
+<h2>Références</h2>
 <ol>
-<li><a href="https://www.xml.com/pub/a/w3j/s1.people.html"><cite>The Web is Ruined and I Ruined it</cite></a> by David Siegel</li>
+<li><a href="https://www.xml.com/pub/a/w3j/s1.people.html"><cite>The Web is Ruined and I Ruined it</cite></a> de David Siegel</li>
 <li><a href="http://www.csszengarden.com/">CSS Zen Garden</a> by Dave Shea</li>
 </ol>
 </aside>
